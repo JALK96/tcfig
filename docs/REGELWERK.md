@@ -31,6 +31,29 @@ Empfohlene Abstände:
 - gemeinsame Achsen und Plotflächen bei direkten Vergleichen ausrichten
 - Panelreihenfolge von links oben nach rechts unten
 
+### Asymmetrische Assemblies
+
+Ein universelles Rechteckraster ist kein Selbstzweck. Wenn ein Plot ein natürliches
+Wide- oder Long-Format besitzt, darf er mehrere Grundzellen überspannen. Verbindlich bleiben
+Endformat, 4-mm-Abstand und eindeutige Lesereihenfolge; nicht jede Panelkante muss durch die
+gesamte Figure laufen.
+
+| Assembly | Struktur | Typische Verwendung |
+|---|---|---|
+| `lead_right` | großer Lead links, zwei Details rechts | Zeitreihe plus Konvergenzdiagnosen |
+| `lead_top` | breiter Lead oben, zwei Details unten | Übersicht plus zwei Vergleiche |
+| `wide_triptych` | breiter Lead oben, drei Details unten | Trajektorie/FES plus drei Kontrollen |
+| `staggered` | breite Panels diagonal versetzt | zwei Hauptresultate mit je einem Detail |
+| `sidebar_matrix` | lange Kontextspalte plus 1+2 Panels | Struktur/Schema neben quantitativen Plots |
+| `long_story` | langer Einspaltenfluss mit gemischten Breiten | vertikale Supplement-Lesefolge |
+
+- Höchstens ein Panel erhält klar dominantes Flächengewicht.
+- Ein breites Panel braucht einen inhaltlichen Grund: lange Zeitachse, Energielandschaft oder Sequenz.
+- Ein hohes Panel braucht einen inhaltlichen Grund: Zustandsfolge, Strukturserie oder vertikale Skala.
+- Kleine Slots enthalten reduzierte Diagnostik; keine Hauptplots mit langen Legenden.
+- Geteilte Skalen werden auch über versetzte Kanten hinweg identisch gehalten.
+- Die Lesereihenfolge folgt den Panelbuchstaben, nicht allein der Geometrie.
+
 ## 3. Typografie
 
 Die Schriftfamilie ist Arial mit Helvetica, Liberation Sans und DejaVu Sans als Fallback.
@@ -75,6 +98,23 @@ Farbe wird nach Datentyp gewählt, nicht nach persönlichem Geschmack.
 `jet`, `rainbow`, `hsv`, `nipy_spectral` und nicht begründete Rot-Grün-Kombinationen
 sind im Validator gesperrt. Continuous Maps müssen eine passende Normierung besitzen.
 Bei diverging Maps liegt der Mittelpunkt auf einem wissenschaftlich begründeten Wert.
+
+Zusätzliche Paul-Tol-Schemata:
+
+| Schema | Verwendung |
+|---|---|
+| `tol_vibrant` | kräftige Alternative für bis zu 7 Linien/Kategorien |
+| `tol_medium_contrast` | drei zusammengehörige Hell/Dunkel-Paare |
+| `tol_dark` | Linien oder Text mit hohem Kontrast auf Weiß; nicht für Graustufenvergleich |
+| `tol_light` | kleine beschriftete Flächen, selten für Linien |
+| `tol_pale` | Unsicherheitsbänder, Tabellenzellen und große Hintergrundflächen |
+| `tol_sunset`, `tol_nightfall` | divergierende kontinuierliche Daten |
+| `tol_burd`, `tol_prgn` | klassische divergierende Alternativen |
+| `tol_ylorbr`, `tol_iridescent` | sequenzielle Daten; `iridescent` mit linearer Luminanz |
+
+`tol_bright`, `tol_high_contrast`, `tol_vibrant` und `tol_muted` sind die bevorzugten
+Linienpaletten. `tol_light` und `tol_pale` werden nicht als gleichwertige Linienpaletten
+behandelt, da ihr Kontrast auf weißem Hintergrund geringer ist.
 
 ## 6. Molecular-Dynamics-Grammatik
 
@@ -139,4 +179,3 @@ NPZ sowie einfache eindimensionale Spalten zusätzlich als CSV gespeichert werde
 - effektive Rasterauflösung ausreichend
 - Caption definiert Statistik, Fehlerdarstellung und Replikatzahl
 - aktuelle Journalhinweise erneut gegen das Profil prüfen
-

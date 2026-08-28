@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="177.8mm" height="150.0mm"
+     viewBox="0 0 177.8 150.0">
+  <title>tcfig jctc sidebar_matrix assembly</title>
+  <style>
+    .panel { font-family: Arial, Helvetica, sans-serif; font-size: 4.234px;
+              font-weight: bold; text-anchor: middle; dominant-baseline: middle; fill: #171717; }
+    .info { font-family: Arial, Helvetica, sans-serif; font-size: 2.822px; fill: #171717; }
+    .small { font-size: 2.200px; fill: #666666; }
+  </style>
+  <rect x="0" y="0" width="177.8" height="150.0" fill="#FFFFFF" stroke="#171717" stroke-width="0.25" />
+  <g id="SLOT_A"><rect x="0.000" y="0.000" width="49.374" height="150.000" fill="#AACCEE" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="24.687" y="75.000">A</text></g><g id="SLOT_B"><rect x="53.374" y="0.000" width="124.426" height="73.000" fill="#CCEEFF" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="115.587" y="36.500">B</text></g><g id="SLOT_C"><rect x="53.374" y="77.000" width="60.213" height="73.000" fill="#BBDDBB" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="83.481" y="113.500">C</text></g><g id="SLOT_D"><rect x="117.587" y="77.000" width="60.213" height="73.000" fill="#EEEEBB" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="147.694" y="113.500">D</text></g>
+  <g id="INFO">
+    <rect x="2" y="136.000" width="118.000" height="12" fill="#FFFFFF" fill-opacity="0.92" />
+    <text class="info" x="4" y="140.500">tcfig · jctc · sidebar_matrix · 177.8 × 150 mm</text>
+    <text class="info small" x="4" y="144.800">gap 4 mm · verified · place at 100%</text>
+  </g>
+</svg>

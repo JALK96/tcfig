@@ -49,13 +49,20 @@ def get_cmap(role: str = "scientific_sequential"):
     """Get a role-based colormap, preferring Crameri maps when installed."""
 
     import matplotlib as mpl
+    from matplotlib.colors import LinearSegmentedColormap
 
     names = get_tokens()["color"]["colormaps"]
-    if role not in names:
-        choices = ", ".join(sorted(names))
+    anchors = get_tokens()["color"].get("colormap_anchors", {})
+    if role in names:
+        requested = str(names[role])
+    elif role in anchors:
+        requested = role
+    else:
+        choices = ", ".join(sorted(set(names) | set(anchors)))
         raise ValueError(f"Unknown colormap role '{role}'. Available: {choices}.")
 
-    requested = str(names[role])
+    if requested in anchors:
+        return LinearSegmentedColormap.from_list(requested, anchors[requested])
     if requested in mpl.colormaps:
         return mpl.colormaps[requested]
 

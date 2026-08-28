@@ -31,3 +31,15 @@ in Affinity Designer oder Publisher importieren.
 Die SVG-Linien werden nicht exportiert. Für die finale Figure wird die Ebene `GRID`
 ausgeblendet und nur die komponierte Abbildung exportiert.
 
+## Asymmetrische Vorlagen
+
+Unter `templates/affinity/assemblies/<profil>/` liegen für jedes Journalprofil sechs
+fertige Assembly-SVGs. Jeder farbige Slot ist als eigene Ebene `SLOT_A`, `SLOT_B` usw.
+angelegt. Die Slotmaße stehen zusätzlich in `assembly_coordinates.json`.
+
+- Wide-Plot: `lead_top`, `wide_triptych` oder `staggered`
+- Long-/Sidebar-Plot: `lead_right` oder `sidebar_matrix`
+- lange Einspaltenabbildung: `long_story`
+
+Ein Plot wird für die reale Slotbreite neu aus Python exportiert. Er wird nicht in Affinity
+verzerrt, um einen unpassenden Slot zu füllen.

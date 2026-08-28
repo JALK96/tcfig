@@ -21,6 +21,12 @@ Stand: 28. August 2026
 - [Matplotlib: Choosing Colormaps](https://matplotlib.org/stable/users/explain/colors/colormaps.html)
 - [Nature Accessibility Guidance](https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/)
 
+Die Tol-Werte wurden am 28. August 2026 erneut mit der aktuellen Originalseite abgeglichen.
+Aufgenommen sind die qualitativen Schemata `bright`, `high-contrast`, `vibrant`, `muted`,
+`medium-contrast`, `dark`, `light` und `pale` sowie ausgewählte divergierende und sequenzielle
+Skalen. Die Originalseite weist ausdrücklich darauf hin, dass `light` und `pale` primär für
+beschriftete Flächen statt für Linien auf weißem Hintergrund gedacht sind.
+
 ## MD-Reproduzierbarkeit
 
 - [Avoiding False Positive Conclusions: The Importance of Replicas](https://pubs.acs.org/doi/10.1021/acs.jctc.8b00391)
@@ -32,4 +38,3 @@ Stand: 28. August 2026
 ## Gestaltungsgrundlagen
 
 - [Ten Simple Rules for Better Figures](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833)
-

@@ -16,6 +16,7 @@ Der wichtigste Grundsatz lautet:
 - Profile für JCTC/ACS, JCP/AIP, PCCP/RSC, JCC/Wiley, Springer, Elsevier und Nature
 - semantische, farbenblindfreundliche Paletten
 - MD-spezifische Plotbausteine für Replikate, Verteilungen, freie Energien und RDFs
+- sechs benannte asymmetrische Assemblies für Wide-, Long- und Lead/Detail-Figures
 - Export als PDF, SVG und PNG ohne `bbox_inches="tight"`
 - Prüfung von Maßen, Schriftgrößen, Linien und problematischen Colormaps
 - Affinity-kompatible SVG-Raster und eine ASE-Farbpalette
@@ -41,6 +42,16 @@ with tcfig.canvas(profile="jctc", width="single", height="standard") as (fig, ax
     tcfig.export(fig, "figure_01", data={"time_ps": x, "observable": np.sin(x)})
 ```
 
+Asymmetrische Kompositionen verwenden dieselben Profile und Endmaße:
+
+```python
+with tcfig.assembly_canvas("lead_right", profile="jctc") as (fig, axes):
+    axes["A"].plot(x, y)       # dominante Analyse
+    axes["B"].plot(x, detail)  # Diagnose 1
+    axes["C"].plot(x, check)   # Diagnose 2
+    tcfig.label_panels(axes)
+```
+
 Ausführliche Entscheidungen stehen in [docs/REGELWERK.md](docs/REGELWERK.md).
 Journalanforderungen und deren Status stehen in
 [docs/JOURNAL_PROFILE.md](docs/JOURNAL_PROFILE.md). Der Affinity-Ablauf ist in
@@ -54,4 +65,3 @@ Journalanforderungen und deren Status stehen in
   Tokens, Tests und Affinity-Vorlagen dagegen schon.
 - Vor einer Einreichung müssen die aktuellen Hinweise des konkreten Journals
   erneut geprüft werden.
-

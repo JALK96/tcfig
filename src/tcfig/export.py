@@ -83,6 +83,7 @@ def export(
         "profile_source": publication.source,
         "profile_verified": publication.verified,
         "dimensions_mm": {"width": report.width_mm, "height": report.height_mm},
+        "assembly": metadata.get("assembly"),
         "base_font_pt": publication.base_font_pt,
         "formats": list(chosen_formats),
         "png_dpi": chosen_dpi if "png" in chosen_formats else None,

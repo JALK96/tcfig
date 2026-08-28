@@ -132,22 +132,35 @@ def palette_reference() -> None:
     import matplotlib.pyplot as plt
     from matplotlib.colors import to_rgb
 
-    qualitative = ("tol_high_contrast", "tol_bright", "tol_muted")
+    qualitative = (
+        "tol_high_contrast",
+        "tol_bright",
+        "tol_vibrant",
+        "tol_muted",
+        "tol_medium_contrast",
+        "tol_dark",
+        "tol_light",
+        "tol_pale",
+    )
     continuous = (
         ("scientific_sequential", "sequential · magnitude"),
         ("scientific_diverging", "diverging · signed deviation"),
         ("scientific_cyclic", "cyclic · angle / phase"),
+        ("tol_sunset", "Tol sunset · diverging"),
+        ("tol_nightfall", "Tol nightfall · diverging"),
+        ("tol_ylorbr", "Tol YlOrBr · sequential"),
+        ("tol_iridescent", "Tol iridescent · sequential"),
     )
 
     with tcfig.canvas(
         profile="house",
         width="double",
-        height=115,
-        nrows=6,
+        height=180,
+        nrows=len(qualitative) + len(continuous),
         ncols=1,
         close=True,
     ) as (fig, axes):
-        for ax, name in zip(axes[:3], qualitative, strict=True):
+        for ax, name in zip(axes[: len(qualitative)], qualitative, strict=True):
             colors = tcfig.palette(name)
             for index, color in enumerate(colors):
                 ax.add_patch(plt.Rectangle((index, 0), 1, 1, color=color, linewidth=0))
@@ -168,7 +181,7 @@ def palette_reference() -> None:
             ax.text(-0.015, 0.5, label, transform=ax.transAxes, ha="right", va="center")
 
         gradient = np.linspace(0, 1, 512)[None, :]
-        for ax, (role, label) in zip(axes[3:], continuous, strict=True):
+        for ax, (role, label) in zip(axes[len(qualitative) :], continuous, strict=True):
             ax.imshow(gradient, aspect="auto", cmap=tcfig.get_cmap(role), extent=(0, 1, 0, 1))
             ax.set_axis_off()
             ax.text(-0.015, 0.5, label, transform=ax.transAxes, ha="right", va="center")

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from collections.abc import Iterator, Sequence
+from collections.abc import Iterator, Mapping, Sequence
 from contextlib import contextmanager
 from typing import Any
 
@@ -143,7 +143,10 @@ def label_panels(
 
     import numpy as np
 
-    flat = list(np.asarray(axes, dtype=object).reshape(-1))
+    if isinstance(axes, Mapping):
+        flat = list(axes.values())
+    else:
+        flat = list(np.asarray(axes, dtype=object).reshape(-1))
     panel_labels = labels or tuple(chr(ord("a") + index) for index in range(len(flat)))
     if len(panel_labels) != len(flat):
         raise ValueError("The number of panel labels must match the number of axes.")

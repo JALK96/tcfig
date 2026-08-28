@@ -1,0 +1,1964 @@
+{
+  "house": {
+    "lead_right": {
+      "profile": "house",
+      "assembly": "lead_right",
+      "description": "Dominant analysis at left, two supporting panels at right",
+      "canvas_mm": {
+        "width": 180.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 123.44444444444444,
+          "height": 105.0
+        },
+        "B": {
+          "x": 127.44444444444444,
+          "y": 0.0,
+          "width": 52.55555555555556,
+          "height": 50.5
+        },
+        "C": {
+          "x": 127.44444444444444,
+          "y": 54.5,
+          "width": 52.55555555555556,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "internal"
+    },
+    "lead_top": {
+      "profile": "house",
+      "assembly": "lead_top",
+      "description": "Wide overview above two aligned detail panels",
+      "canvas_mm": {
+        "width": 180.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 180.0,
+          "height": 58.02127659574469
+        },
+        "B": {
+          "x": 0.0,
+          "y": 62.02127659574469,
+          "width": 88.0,
+          "height": 42.97872340425532
+        },
+        "C": {
+          "x": 92.0,
+          "y": 62.02127659574469,
+          "width": 88.0,
+          "height": 42.97872340425532
+        }
+      },
+      "verified": true,
+      "source": "internal"
+    },
+    "wide_triptych": {
+      "profile": "house",
+      "assembly": "wide_triptych",
+      "description": "Wide overview above three compact diagnostics",
+      "canvas_mm": {
+        "width": 180.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 180.0,
+          "height": 83.87234042553192
+        },
+        "B": {
+          "x": 0.0,
+          "y": 87.87234042553192,
+          "width": 57.333333333333336,
+          "height": 62.12765957446808
+        },
+        "C": {
+          "x": 61.333333333333336,
+          "y": 87.87234042553192,
+          "width": 57.333333333333336,
+          "height": 62.12765957446808
+        },
+        "D": {
+          "x": 122.66666666666667,
+          "y": 87.87234042553192,
+          "width": 57.333333333333336,
+          "height": 62.12765957446808
+        }
+      },
+      "verified": true,
+      "source": "internal"
+    },
+    "staggered": {
+      "profile": "house",
+      "assembly": "staggered",
+      "description": "Two wide and two narrow panels with intentionally offset boundaries",
+      "canvas_mm": {
+        "width": 180.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 118.66666666666667,
+          "height": 50.5
+        },
+        "B": {
+          "x": 122.66666666666667,
+          "y": 0.0,
+          "width": 57.333333333333336,
+          "height": 50.5
+        },
+        "C": {
+          "x": 0.0,
+          "y": 54.5,
+          "width": 57.333333333333336,
+          "height": 50.5
+        },
+        "D": {
+          "x": 61.333333333333336,
+          "y": 54.5,
+          "width": 118.66666666666667,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "internal"
+    },
+    "sidebar_matrix": {
+      "profile": "house",
+      "assembly": "sidebar_matrix",
+      "description": "Long contextual panel beside one wide and two compact panels",
+      "canvas_mm": {
+        "width": 180.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 50.01418439716312,
+          "height": 150.0
+        },
+        "B": {
+          "x": 54.01418439716312,
+          "y": 0.0,
+          "width": 125.98581560283688,
+          "height": 73.0
+        },
+        "C": {
+          "x": 54.01418439716312,
+          "y": 77.0,
+          "width": 60.99290780141844,
+          "height": 73.0
+        },
+        "D": {
+          "x": 119.00709219858156,
+          "y": 77.0,
+          "width": 60.99290780141844,
+          "height": 73.0
+        }
+      },
+      "verified": true,
+      "source": "internal"
+    },
+    "long_story": {
+      "profile": "house",
+      "assembly": "long_story",
+      "description": "Tall single-column narrative with overview, paired details and summary",
+      "canvas_mm": {
+        "width": 85.0,
+        "height": 130.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 85.0,
+          "height": 65.2987012987013
+        },
+        "B": {
+          "x": 0.0,
+          "y": 69.2987012987013,
+          "width": 40.5,
+          "height": 30.649350649350648
+        },
+        "C": {
+          "x": 44.5,
+          "y": 69.2987012987013,
+          "width": 40.5,
+          "height": 30.649350649350648
+        },
+        "D": {
+          "x": 0.0,
+          "y": 103.94805194805195,
+          "width": 85.0,
+          "height": 26.05194805194805
+        }
+      },
+      "verified": true,
+      "source": "internal"
+    }
+  },
+  "jctc": {
+    "lead_right": {
+      "profile": "jctc",
+      "assembly": "lead_right",
+      "description": "Dominant analysis at left, two supporting panels at right",
+      "canvas_mm": {
+        "width": 177.8,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 121.91666666666669,
+          "height": 105.0
+        },
+        "B": {
+          "x": 125.91666666666669,
+          "y": 0.0,
+          "width": 51.88333333333334,
+          "height": 50.5
+        },
+        "C": {
+          "x": 125.91666666666669,
+          "y": 54.5,
+          "width": 51.88333333333334,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://researcher-resources.acs.org/publish/author_guidelines?coden=jctcce"
+    },
+    "lead_top": {
+      "profile": "jctc",
+      "assembly": "lead_top",
+      "description": "Wide overview above two aligned detail panels",
+      "canvas_mm": {
+        "width": 177.8,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 177.8,
+          "height": 58.02127659574469
+        },
+        "B": {
+          "x": 0.0,
+          "y": 62.02127659574469,
+          "width": 86.9,
+          "height": 42.97872340425532
+        },
+        "C": {
+          "x": 90.9,
+          "y": 62.02127659574469,
+          "width": 86.9,
+          "height": 42.97872340425532
+        }
+      },
+      "verified": true,
+      "source": "https://researcher-resources.acs.org/publish/author_guidelines?coden=jctcce"
+    },
+    "wide_triptych": {
+      "profile": "jctc",
+      "assembly": "wide_triptych",
+      "description": "Wide overview above three compact diagnostics",
+      "canvas_mm": {
+        "width": 177.8,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 177.8,
+          "height": 83.87234042553192
+        },
+        "B": {
+          "x": 0.0,
+          "y": 87.87234042553192,
+          "width": 56.6,
+          "height": 62.12765957446808
+        },
+        "C": {
+          "x": 60.6,
+          "y": 87.87234042553192,
+          "width": 56.6,
+          "height": 62.12765957446808
+        },
+        "D": {
+          "x": 121.2,
+          "y": 87.87234042553192,
+          "width": 56.6,
+          "height": 62.12765957446808
+        }
+      },
+      "verified": true,
+      "source": "https://researcher-resources.acs.org/publish/author_guidelines?coden=jctcce"
+    },
+    "staggered": {
+      "profile": "jctc",
+      "assembly": "staggered",
+      "description": "Two wide and two narrow panels with intentionally offset boundaries",
+      "canvas_mm": {
+        "width": 177.8,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 117.2,
+          "height": 50.5
+        },
+        "B": {
+          "x": 121.2,
+          "y": 0.0,
+          "width": 56.6,
+          "height": 50.5
+        },
+        "C": {
+          "x": 0.0,
+          "y": 54.5,
+          "width": 56.6,
+          "height": 50.5
+        },
+        "D": {
+          "x": 60.6,
+          "y": 54.5,
+          "width": 117.2,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://researcher-resources.acs.org/publish/author_guidelines?coden=jctcce"
+    },
+    "sidebar_matrix": {
+      "profile": "jctc",
+      "assembly": "sidebar_matrix",
+      "description": "Long contextual panel beside one wide and two compact panels",
+      "canvas_mm": {
+        "width": 177.8,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 49.374468085106386,
+          "height": 150.0
+        },
+        "B": {
+          "x": 53.374468085106386,
+          "y": 0.0,
+          "width": 124.42553191489363,
+          "height": 73.0
+        },
+        "C": {
+          "x": 53.374468085106386,
+          "y": 77.0,
+          "width": 60.21276595744681,
+          "height": 73.0
+        },
+        "D": {
+          "x": 117.58723404255319,
+          "y": 77.0,
+          "width": 60.21276595744681,
+          "height": 73.0
+        }
+      },
+      "verified": true,
+      "source": "https://researcher-resources.acs.org/publish/author_guidelines?coden=jctcce"
+    },
+    "long_story": {
+      "profile": "jctc",
+      "assembly": "long_story",
+      "description": "Tall single-column narrative with overview, paired details and summary",
+      "canvas_mm": {
+        "width": 84.6,
+        "height": 130.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 84.6,
+          "height": 65.2987012987013
+        },
+        "B": {
+          "x": 0.0,
+          "y": 69.2987012987013,
+          "width": 40.3,
+          "height": 30.649350649350648
+        },
+        "C": {
+          "x": 44.3,
+          "y": 69.2987012987013,
+          "width": 40.3,
+          "height": 30.649350649350648
+        },
+        "D": {
+          "x": 0.0,
+          "y": 103.94805194805195,
+          "width": 84.6,
+          "height": 26.05194805194805
+        }
+      },
+      "verified": true,
+      "source": "https://researcher-resources.acs.org/publish/author_guidelines?coden=jctcce"
+    }
+  },
+  "jcp": {
+    "lead_right": {
+      "profile": "jcp",
+      "assembly": "lead_right",
+      "description": "Dominant analysis at left, two supporting panels at right",
+      "canvas_mm": {
+        "width": 170.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 116.5,
+          "height": 105.0
+        },
+        "B": {
+          "x": 120.5,
+          "y": 0.0,
+          "width": 49.5,
+          "height": 50.5
+        },
+        "C": {
+          "x": 120.5,
+          "y": 54.5,
+          "width": 49.5,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://publishing.aip.org/resources/researchers/author-instructions/"
+    },
+    "lead_top": {
+      "profile": "jcp",
+      "assembly": "lead_top",
+      "description": "Wide overview above two aligned detail panels",
+      "canvas_mm": {
+        "width": 170.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 170.0,
+          "height": 58.02127659574469
+        },
+        "B": {
+          "x": 0.0,
+          "y": 62.02127659574469,
+          "width": 83.0,
+          "height": 42.97872340425532
+        },
+        "C": {
+          "x": 87.0,
+          "y": 62.02127659574469,
+          "width": 83.0,
+          "height": 42.97872340425532
+        }
+      },
+      "verified": true,
+      "source": "https://publishing.aip.org/resources/researchers/author-instructions/"
+    },
+    "wide_triptych": {
+      "profile": "jcp",
+      "assembly": "wide_triptych",
+      "description": "Wide overview above three compact diagnostics",
+      "canvas_mm": {
+        "width": 170.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 170.0,
+          "height": 83.87234042553192
+        },
+        "B": {
+          "x": 0.0,
+          "y": 87.87234042553192,
+          "width": 54.0,
+          "height": 62.12765957446808
+        },
+        "C": {
+          "x": 58.0,
+          "y": 87.87234042553192,
+          "width": 54.0,
+          "height": 62.12765957446808
+        },
+        "D": {
+          "x": 116.0,
+          "y": 87.87234042553192,
+          "width": 54.0,
+          "height": 62.12765957446808
+        }
+      },
+      "verified": true,
+      "source": "https://publishing.aip.org/resources/researchers/author-instructions/"
+    },
+    "staggered": {
+      "profile": "jcp",
+      "assembly": "staggered",
+      "description": "Two wide and two narrow panels with intentionally offset boundaries",
+      "canvas_mm": {
+        "width": 170.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 112.0,
+          "height": 50.5
+        },
+        "B": {
+          "x": 116.0,
+          "y": 0.0,
+          "width": 54.0,
+          "height": 50.5
+        },
+        "C": {
+          "x": 0.0,
+          "y": 54.5,
+          "width": 54.0,
+          "height": 50.5
+        },
+        "D": {
+          "x": 58.0,
+          "y": 54.5,
+          "width": 112.0,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://publishing.aip.org/resources/researchers/author-instructions/"
+    },
+    "sidebar_matrix": {
+      "profile": "jcp",
+      "assembly": "sidebar_matrix",
+      "description": "Long contextual panel beside one wide and two compact panels",
+      "canvas_mm": {
+        "width": 170.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 47.1063829787234,
+          "height": 150.0
+        },
+        "B": {
+          "x": 51.1063829787234,
+          "y": 0.0,
+          "width": 118.8936170212766,
+          "height": 73.0
+        },
+        "C": {
+          "x": 51.1063829787234,
+          "y": 77.0,
+          "width": 57.4468085106383,
+          "height": 73.0
+        },
+        "D": {
+          "x": 112.5531914893617,
+          "y": 77.0,
+          "width": 57.4468085106383,
+          "height": 73.0
+        }
+      },
+      "verified": true,
+      "source": "https://publishing.aip.org/resources/researchers/author-instructions/"
+    },
+    "long_story": {
+      "profile": "jcp",
+      "assembly": "long_story",
+      "description": "Tall single-column narrative with overview, paired details and summary",
+      "canvas_mm": {
+        "width": 85.0,
+        "height": 130.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 85.0,
+          "height": 65.2987012987013
+        },
+        "B": {
+          "x": 0.0,
+          "y": 69.2987012987013,
+          "width": 40.5,
+          "height": 30.649350649350648
+        },
+        "C": {
+          "x": 44.5,
+          "y": 69.2987012987013,
+          "width": 40.5,
+          "height": 30.649350649350648
+        },
+        "D": {
+          "x": 0.0,
+          "y": 103.94805194805195,
+          "width": 85.0,
+          "height": 26.05194805194805
+        }
+      },
+      "verified": true,
+      "source": "https://publishing.aip.org/resources/researchers/author-instructions/"
+    }
+  },
+  "pccp": {
+    "lead_right": {
+      "profile": "pccp",
+      "assembly": "lead_right",
+      "description": "Dominant analysis at left, two supporting panels at right",
+      "canvas_mm": {
+        "width": 171.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 117.19444444444444,
+          "height": 105.0
+        },
+        "B": {
+          "x": 121.19444444444444,
+          "y": 0.0,
+          "width": 49.80555555555556,
+          "height": 50.5
+        },
+        "C": {
+          "x": 121.19444444444444,
+          "y": 54.5,
+          "width": 49.80555555555556,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/pccp"
+    },
+    "lead_top": {
+      "profile": "pccp",
+      "assembly": "lead_top",
+      "description": "Wide overview above two aligned detail panels",
+      "canvas_mm": {
+        "width": 171.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 171.0,
+          "height": 58.02127659574469
+        },
+        "B": {
+          "x": 0.0,
+          "y": 62.02127659574469,
+          "width": 83.5,
+          "height": 42.97872340425532
+        },
+        "C": {
+          "x": 87.5,
+          "y": 62.02127659574469,
+          "width": 83.5,
+          "height": 42.97872340425532
+        }
+      },
+      "verified": true,
+      "source": "https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/pccp"
+    },
+    "wide_triptych": {
+      "profile": "pccp",
+      "assembly": "wide_triptych",
+      "description": "Wide overview above three compact diagnostics",
+      "canvas_mm": {
+        "width": 171.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 171.0,
+          "height": 83.87234042553192
+        },
+        "B": {
+          "x": 0.0,
+          "y": 87.87234042553192,
+          "width": 54.333333333333336,
+          "height": 62.12765957446808
+        },
+        "C": {
+          "x": 58.333333333333336,
+          "y": 87.87234042553192,
+          "width": 54.333333333333336,
+          "height": 62.12765957446808
+        },
+        "D": {
+          "x": 116.66666666666667,
+          "y": 87.87234042553192,
+          "width": 54.333333333333336,
+          "height": 62.12765957446808
+        }
+      },
+      "verified": true,
+      "source": "https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/pccp"
+    },
+    "staggered": {
+      "profile": "pccp",
+      "assembly": "staggered",
+      "description": "Two wide and two narrow panels with intentionally offset boundaries",
+      "canvas_mm": {
+        "width": 171.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 112.66666666666667,
+          "height": 50.5
+        },
+        "B": {
+          "x": 116.66666666666667,
+          "y": 0.0,
+          "width": 54.333333333333336,
+          "height": 50.5
+        },
+        "C": {
+          "x": 0.0,
+          "y": 54.5,
+          "width": 54.333333333333336,
+          "height": 50.5
+        },
+        "D": {
+          "x": 58.333333333333336,
+          "y": 54.5,
+          "width": 112.66666666666667,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/pccp"
+    },
+    "sidebar_matrix": {
+      "profile": "pccp",
+      "assembly": "sidebar_matrix",
+      "description": "Long contextual panel beside one wide and two compact panels",
+      "canvas_mm": {
+        "width": 171.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 47.39716312056738,
+          "height": 150.0
+        },
+        "B": {
+          "x": 51.39716312056738,
+          "y": 0.0,
+          "width": 119.60283687943263,
+          "height": 73.0
+        },
+        "C": {
+          "x": 51.39716312056738,
+          "y": 77.0,
+          "width": 57.801418439716315,
+          "height": 73.0
+        },
+        "D": {
+          "x": 113.19858156028369,
+          "y": 77.0,
+          "width": 57.801418439716315,
+          "height": 73.0
+        }
+      },
+      "verified": true,
+      "source": "https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/pccp"
+    },
+    "long_story": {
+      "profile": "pccp",
+      "assembly": "long_story",
+      "description": "Tall single-column narrative with overview, paired details and summary",
+      "canvas_mm": {
+        "width": 83.0,
+        "height": 130.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 83.0,
+          "height": 65.2987012987013
+        },
+        "B": {
+          "x": 0.0,
+          "y": 69.2987012987013,
+          "width": 39.5,
+          "height": 30.649350649350648
+        },
+        "C": {
+          "x": 43.5,
+          "y": 69.2987012987013,
+          "width": 39.5,
+          "height": 30.649350649350648
+        },
+        "D": {
+          "x": 0.0,
+          "y": 103.94805194805195,
+          "width": 83.0,
+          "height": 26.05194805194805
+        }
+      },
+      "verified": true,
+      "source": "https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/pccp"
+    }
+  },
+  "wiley_jcc": {
+    "lead_right": {
+      "profile": "wiley_jcc",
+      "assembly": "lead_right",
+      "description": "Dominant analysis at left, two supporting panels at right",
+      "canvas_mm": {
+        "width": 169.06,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 115.84722222222223,
+          "height": 105.0
+        },
+        "B": {
+          "x": 119.84722222222223,
+          "y": 0.0,
+          "width": 49.21277777777778,
+          "height": 50.5
+        },
+        "C": {
+          "x": 119.84722222222223,
+          "y": 54.5,
+          "width": 49.21277777777778,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://onlinelibrary.wiley.com/page/journal/1096987x/homepage/forauthors.html"
+    },
+    "lead_top": {
+      "profile": "wiley_jcc",
+      "assembly": "lead_top",
+      "description": "Wide overview above two aligned detail panels",
+      "canvas_mm": {
+        "width": 169.06,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 169.06,
+          "height": 58.02127659574469
+        },
+        "B": {
+          "x": 0.0,
+          "y": 62.02127659574469,
+          "width": 82.53,
+          "height": 42.97872340425532
+        },
+        "C": {
+          "x": 86.53,
+          "y": 62.02127659574469,
+          "width": 82.53,
+          "height": 42.97872340425532
+        }
+      },
+      "verified": true,
+      "source": "https://onlinelibrary.wiley.com/page/journal/1096987x/homepage/forauthors.html"
+    },
+    "wide_triptych": {
+      "profile": "wiley_jcc",
+      "assembly": "wide_triptych",
+      "description": "Wide overview above three compact diagnostics",
+      "canvas_mm": {
+        "width": 169.06,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 169.06,
+          "height": 83.87234042553192
+        },
+        "B": {
+          "x": 0.0,
+          "y": 87.87234042553192,
+          "width": 53.68666666666667,
+          "height": 62.12765957446808
+        },
+        "C": {
+          "x": 57.68666666666667,
+          "y": 87.87234042553192,
+          "width": 53.68666666666667,
+          "height": 62.12765957446808
+        },
+        "D": {
+          "x": 115.37333333333333,
+          "y": 87.87234042553192,
+          "width": 53.68666666666667,
+          "height": 62.12765957446808
+        }
+      },
+      "verified": true,
+      "source": "https://onlinelibrary.wiley.com/page/journal/1096987x/homepage/forauthors.html"
+    },
+    "staggered": {
+      "profile": "wiley_jcc",
+      "assembly": "staggered",
+      "description": "Two wide and two narrow panels with intentionally offset boundaries",
+      "canvas_mm": {
+        "width": 169.06,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 111.37333333333333,
+          "height": 50.5
+        },
+        "B": {
+          "x": 115.37333333333333,
+          "y": 0.0,
+          "width": 53.68666666666667,
+          "height": 50.5
+        },
+        "C": {
+          "x": 0.0,
+          "y": 54.5,
+          "width": 53.68666666666667,
+          "height": 50.5
+        },
+        "D": {
+          "x": 57.68666666666667,
+          "y": 54.5,
+          "width": 111.37333333333333,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://onlinelibrary.wiley.com/page/journal/1096987x/homepage/forauthors.html"
+    },
+    "sidebar_matrix": {
+      "profile": "wiley_jcc",
+      "assembly": "sidebar_matrix",
+      "description": "Long contextual panel beside one wide and two compact panels",
+      "canvas_mm": {
+        "width": 169.06,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 46.83304964539007,
+          "height": 150.0
+        },
+        "B": {
+          "x": 50.83304964539007,
+          "y": 0.0,
+          "width": 118.22695035460994,
+          "height": 73.0
+        },
+        "C": {
+          "x": 50.83304964539007,
+          "y": 77.0,
+          "width": 57.11347517730497,
+          "height": 73.0
+        },
+        "D": {
+          "x": 111.94652482269504,
+          "y": 77.0,
+          "width": 57.11347517730497,
+          "height": 73.0
+        }
+      },
+      "verified": true,
+      "source": "https://onlinelibrary.wiley.com/page/journal/1096987x/homepage/forauthors.html"
+    },
+    "long_story": {
+      "profile": "wiley_jcc",
+      "assembly": "long_story",
+      "description": "Tall single-column narrative with overview, paired details and summary",
+      "canvas_mm": {
+        "width": 80.96,
+        "height": 130.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 80.96,
+          "height": 65.2987012987013
+        },
+        "B": {
+          "x": 0.0,
+          "y": 69.2987012987013,
+          "width": 38.48,
+          "height": 30.649350649350648
+        },
+        "C": {
+          "x": 42.48,
+          "y": 69.2987012987013,
+          "width": 38.48,
+          "height": 30.649350649350648
+        },
+        "D": {
+          "x": 0.0,
+          "y": 103.94805194805195,
+          "width": 80.96,
+          "height": 26.05194805194805
+        }
+      },
+      "verified": true,
+      "source": "https://onlinelibrary.wiley.com/page/journal/1096987x/homepage/forauthors.html"
+    }
+  },
+  "springer_tc": {
+    "lead_right": {
+      "profile": "springer_tc",
+      "assembly": "lead_right",
+      "description": "Dominant analysis at left, two supporting panels at right",
+      "canvas_mm": {
+        "width": 174.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 119.27777777777779,
+          "height": 105.0
+        },
+        "B": {
+          "x": 123.27777777777779,
+          "y": 0.0,
+          "width": 50.72222222222223,
+          "height": 50.5
+        },
+        "C": {
+          "x": 123.27777777777779,
+          "y": 54.5,
+          "width": 50.72222222222223,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://www.springer.com/kr/authors-editors/journal-author/journal-author-helpdesk/manuscript-preparation/1260"
+    },
+    "lead_top": {
+      "profile": "springer_tc",
+      "assembly": "lead_top",
+      "description": "Wide overview above two aligned detail panels",
+      "canvas_mm": {
+        "width": 174.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 174.0,
+          "height": 58.02127659574469
+        },
+        "B": {
+          "x": 0.0,
+          "y": 62.02127659574469,
+          "width": 85.0,
+          "height": 42.97872340425532
+        },
+        "C": {
+          "x": 89.0,
+          "y": 62.02127659574469,
+          "width": 85.0,
+          "height": 42.97872340425532
+        }
+      },
+      "verified": true,
+      "source": "https://www.springer.com/kr/authors-editors/journal-author/journal-author-helpdesk/manuscript-preparation/1260"
+    },
+    "wide_triptych": {
+      "profile": "springer_tc",
+      "assembly": "wide_triptych",
+      "description": "Wide overview above three compact diagnostics",
+      "canvas_mm": {
+        "width": 174.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 174.0,
+          "height": 83.87234042553192
+        },
+        "B": {
+          "x": 0.0,
+          "y": 87.87234042553192,
+          "width": 55.333333333333336,
+          "height": 62.12765957446808
+        },
+        "C": {
+          "x": 59.333333333333336,
+          "y": 87.87234042553192,
+          "width": 55.333333333333336,
+          "height": 62.12765957446808
+        },
+        "D": {
+          "x": 118.66666666666667,
+          "y": 87.87234042553192,
+          "width": 55.333333333333336,
+          "height": 62.12765957446808
+        }
+      },
+      "verified": true,
+      "source": "https://www.springer.com/kr/authors-editors/journal-author/journal-author-helpdesk/manuscript-preparation/1260"
+    },
+    "staggered": {
+      "profile": "springer_tc",
+      "assembly": "staggered",
+      "description": "Two wide and two narrow panels with intentionally offset boundaries",
+      "canvas_mm": {
+        "width": 174.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 114.66666666666667,
+          "height": 50.5
+        },
+        "B": {
+          "x": 118.66666666666667,
+          "y": 0.0,
+          "width": 55.333333333333336,
+          "height": 50.5
+        },
+        "C": {
+          "x": 0.0,
+          "y": 54.5,
+          "width": 55.333333333333336,
+          "height": 50.5
+        },
+        "D": {
+          "x": 59.333333333333336,
+          "y": 54.5,
+          "width": 114.66666666666667,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://www.springer.com/kr/authors-editors/journal-author/journal-author-helpdesk/manuscript-preparation/1260"
+    },
+    "sidebar_matrix": {
+      "profile": "springer_tc",
+      "assembly": "sidebar_matrix",
+      "description": "Long contextual panel beside one wide and two compact panels",
+      "canvas_mm": {
+        "width": 174.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 48.26950354609929,
+          "height": 150.0
+        },
+        "B": {
+          "x": 52.26950354609929,
+          "y": 0.0,
+          "width": 121.73049645390071,
+          "height": 73.0
+        },
+        "C": {
+          "x": 52.26950354609929,
+          "y": 77.0,
+          "width": 58.86524822695036,
+          "height": 73.0
+        },
+        "D": {
+          "x": 115.13475177304964,
+          "y": 77.0,
+          "width": 58.86524822695036,
+          "height": 73.0
+        }
+      },
+      "verified": true,
+      "source": "https://www.springer.com/kr/authors-editors/journal-author/journal-author-helpdesk/manuscript-preparation/1260"
+    },
+    "long_story": {
+      "profile": "springer_tc",
+      "assembly": "long_story",
+      "description": "Tall single-column narrative with overview, paired details and summary",
+      "canvas_mm": {
+        "width": 84.0,
+        "height": 130.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 84.0,
+          "height": 65.2987012987013
+        },
+        "B": {
+          "x": 0.0,
+          "y": 69.2987012987013,
+          "width": 40.0,
+          "height": 30.649350649350648
+        },
+        "C": {
+          "x": 44.0,
+          "y": 69.2987012987013,
+          "width": 40.0,
+          "height": 30.649350649350648
+        },
+        "D": {
+          "x": 0.0,
+          "y": 103.94805194805195,
+          "width": 84.0,
+          "height": 26.05194805194805
+        }
+      },
+      "verified": true,
+      "source": "https://www.springer.com/kr/authors-editors/journal-author/journal-author-helpdesk/manuscript-preparation/1260"
+    }
+  },
+  "elsevier_tc": {
+    "lead_right": {
+      "profile": "elsevier_tc",
+      "assembly": "lead_right",
+      "description": "Dominant analysis at left, two supporting panels at right",
+      "canvas_mm": {
+        "width": 190.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 130.3888888888889,
+          "height": 105.0
+        },
+        "B": {
+          "x": 134.3888888888889,
+          "y": 0.0,
+          "width": 55.611111111111114,
+          "height": 50.5
+        },
+        "C": {
+          "x": 134.3888888888889,
+          "y": 54.5,
+          "width": 55.611111111111114,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://www.elsevier.com/en-gb/about/policies-and-standards/author/artwork-and-media-instructions/artwork-sizing"
+    },
+    "lead_top": {
+      "profile": "elsevier_tc",
+      "assembly": "lead_top",
+      "description": "Wide overview above two aligned detail panels",
+      "canvas_mm": {
+        "width": 190.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 190.0,
+          "height": 58.02127659574469
+        },
+        "B": {
+          "x": 0.0,
+          "y": 62.02127659574469,
+          "width": 93.0,
+          "height": 42.97872340425532
+        },
+        "C": {
+          "x": 97.0,
+          "y": 62.02127659574469,
+          "width": 93.0,
+          "height": 42.97872340425532
+        }
+      },
+      "verified": true,
+      "source": "https://www.elsevier.com/en-gb/about/policies-and-standards/author/artwork-and-media-instructions/artwork-sizing"
+    },
+    "wide_triptych": {
+      "profile": "elsevier_tc",
+      "assembly": "wide_triptych",
+      "description": "Wide overview above three compact diagnostics",
+      "canvas_mm": {
+        "width": 190.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 190.0,
+          "height": 83.87234042553192
+        },
+        "B": {
+          "x": 0.0,
+          "y": 87.87234042553192,
+          "width": 60.666666666666664,
+          "height": 62.12765957446808
+        },
+        "C": {
+          "x": 64.66666666666666,
+          "y": 87.87234042553192,
+          "width": 60.666666666666664,
+          "height": 62.12765957446808
+        },
+        "D": {
+          "x": 129.33333333333331,
+          "y": 87.87234042553192,
+          "width": 60.666666666666664,
+          "height": 62.12765957446808
+        }
+      },
+      "verified": true,
+      "source": "https://www.elsevier.com/en-gb/about/policies-and-standards/author/artwork-and-media-instructions/artwork-sizing"
+    },
+    "staggered": {
+      "profile": "elsevier_tc",
+      "assembly": "staggered",
+      "description": "Two wide and two narrow panels with intentionally offset boundaries",
+      "canvas_mm": {
+        "width": 190.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 125.33333333333333,
+          "height": 50.5
+        },
+        "B": {
+          "x": 129.33333333333331,
+          "y": 0.0,
+          "width": 60.666666666666664,
+          "height": 50.5
+        },
+        "C": {
+          "x": 0.0,
+          "y": 54.5,
+          "width": 60.666666666666664,
+          "height": 50.5
+        },
+        "D": {
+          "x": 64.66666666666666,
+          "y": 54.5,
+          "width": 125.33333333333333,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://www.elsevier.com/en-gb/about/policies-and-standards/author/artwork-and-media-instructions/artwork-sizing"
+    },
+    "sidebar_matrix": {
+      "profile": "elsevier_tc",
+      "assembly": "sidebar_matrix",
+      "description": "Long contextual panel beside one wide and two compact panels",
+      "canvas_mm": {
+        "width": 190.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 52.92198581560284,
+          "height": 150.0
+        },
+        "B": {
+          "x": 56.92198581560284,
+          "y": 0.0,
+          "width": 133.07801418439718,
+          "height": 73.0
+        },
+        "C": {
+          "x": 56.92198581560284,
+          "y": 77.0,
+          "width": 64.53900709219859,
+          "height": 73.0
+        },
+        "D": {
+          "x": 125.46099290780143,
+          "y": 77.0,
+          "width": 64.53900709219859,
+          "height": 73.0
+        }
+      },
+      "verified": true,
+      "source": "https://www.elsevier.com/en-gb/about/policies-and-standards/author/artwork-and-media-instructions/artwork-sizing"
+    },
+    "long_story": {
+      "profile": "elsevier_tc",
+      "assembly": "long_story",
+      "description": "Tall single-column narrative with overview, paired details and summary",
+      "canvas_mm": {
+        "width": 90.0,
+        "height": 130.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 90.0,
+          "height": 65.2987012987013
+        },
+        "B": {
+          "x": 0.0,
+          "y": 69.2987012987013,
+          "width": 43.0,
+          "height": 30.649350649350648
+        },
+        "C": {
+          "x": 47.0,
+          "y": 69.2987012987013,
+          "width": 43.0,
+          "height": 30.649350649350648
+        },
+        "D": {
+          "x": 0.0,
+          "y": 103.94805194805195,
+          "width": 90.0,
+          "height": 26.05194805194805
+        }
+      },
+      "verified": true,
+      "source": "https://www.elsevier.com/en-gb/about/policies-and-standards/author/artwork-and-media-instructions/artwork-sizing"
+    }
+  },
+  "nature": {
+    "lead_right": {
+      "profile": "nature",
+      "assembly": "lead_right",
+      "description": "Dominant analysis at left, two supporting panels at right",
+      "canvas_mm": {
+        "width": 183.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 125.52777777777779,
+          "height": 105.0
+        },
+        "B": {
+          "x": 129.52777777777777,
+          "y": 0.0,
+          "width": 53.47222222222223,
+          "height": 50.5
+        },
+        "C": {
+          "x": 129.52777777777777,
+          "y": 54.5,
+          "width": 53.47222222222223,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/"
+    },
+    "lead_top": {
+      "profile": "nature",
+      "assembly": "lead_top",
+      "description": "Wide overview above two aligned detail panels",
+      "canvas_mm": {
+        "width": 183.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 183.0,
+          "height": 58.02127659574469
+        },
+        "B": {
+          "x": 0.0,
+          "y": 62.02127659574469,
+          "width": 89.5,
+          "height": 42.97872340425532
+        },
+        "C": {
+          "x": 93.5,
+          "y": 62.02127659574469,
+          "width": 89.5,
+          "height": 42.97872340425532
+        }
+      },
+      "verified": true,
+      "source": "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/"
+    },
+    "wide_triptych": {
+      "profile": "nature",
+      "assembly": "wide_triptych",
+      "description": "Wide overview above three compact diagnostics",
+      "canvas_mm": {
+        "width": 183.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 183.0,
+          "height": 83.87234042553192
+        },
+        "B": {
+          "x": 0.0,
+          "y": 87.87234042553192,
+          "width": 58.333333333333336,
+          "height": 62.12765957446808
+        },
+        "C": {
+          "x": 62.333333333333336,
+          "y": 87.87234042553192,
+          "width": 58.333333333333336,
+          "height": 62.12765957446808
+        },
+        "D": {
+          "x": 124.66666666666667,
+          "y": 87.87234042553192,
+          "width": 58.333333333333336,
+          "height": 62.12765957446808
+        }
+      },
+      "verified": true,
+      "source": "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/"
+    },
+    "staggered": {
+      "profile": "nature",
+      "assembly": "staggered",
+      "description": "Two wide and two narrow panels with intentionally offset boundaries",
+      "canvas_mm": {
+        "width": 183.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 120.66666666666667,
+          "height": 50.5
+        },
+        "B": {
+          "x": 124.66666666666667,
+          "y": 0.0,
+          "width": 58.333333333333336,
+          "height": 50.5
+        },
+        "C": {
+          "x": 0.0,
+          "y": 54.5,
+          "width": 58.333333333333336,
+          "height": 50.5
+        },
+        "D": {
+          "x": 62.333333333333336,
+          "y": 54.5,
+          "width": 120.66666666666667,
+          "height": 50.5
+        }
+      },
+      "verified": true,
+      "source": "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/"
+    },
+    "sidebar_matrix": {
+      "profile": "nature",
+      "assembly": "sidebar_matrix",
+      "description": "Long contextual panel beside one wide and two compact panels",
+      "canvas_mm": {
+        "width": 183.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 50.88652482269504,
+          "height": 150.0
+        },
+        "B": {
+          "x": 54.88652482269504,
+          "y": 0.0,
+          "width": 128.11347517730496,
+          "height": 73.0
+        },
+        "C": {
+          "x": 54.88652482269504,
+          "y": 77.0,
+          "width": 62.05673758865249,
+          "height": 73.0
+        },
+        "D": {
+          "x": 120.94326241134752,
+          "y": 77.0,
+          "width": 62.05673758865249,
+          "height": 73.0
+        }
+      },
+      "verified": true,
+      "source": "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/"
+    },
+    "long_story": {
+      "profile": "nature",
+      "assembly": "long_story",
+      "description": "Tall single-column narrative with overview, paired details and summary",
+      "canvas_mm": {
+        "width": 89.0,
+        "height": 130.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 89.0,
+          "height": 65.2987012987013
+        },
+        "B": {
+          "x": 0.0,
+          "y": 69.2987012987013,
+          "width": 42.5,
+          "height": 30.649350649350648
+        },
+        "C": {
+          "x": 46.5,
+          "y": 69.2987012987013,
+          "width": 42.5,
+          "height": 30.649350649350648
+        },
+        "D": {
+          "x": 0.0,
+          "y": 103.94805194805195,
+          "width": 89.0,
+          "height": 26.05194805194805
+        }
+      },
+      "verified": true,
+      "source": "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/"
+    }
+  },
+  "taylor_francis_generic": {
+    "lead_right": {
+      "profile": "taylor_francis_generic",
+      "assembly": "lead_right",
+      "description": "Dominant analysis at left, two supporting panels at right",
+      "canvas_mm": {
+        "width": 170.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 116.5,
+          "height": 105.0
+        },
+        "B": {
+          "x": 120.5,
+          "y": 0.0,
+          "width": 49.5,
+          "height": 50.5
+        },
+        "C": {
+          "x": 120.5,
+          "y": 54.5,
+          "width": 49.5,
+          "height": 50.5
+        }
+      },
+      "verified": false,
+      "source": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/submit-electronic-artwork/"
+    },
+    "lead_top": {
+      "profile": "taylor_francis_generic",
+      "assembly": "lead_top",
+      "description": "Wide overview above two aligned detail panels",
+      "canvas_mm": {
+        "width": 170.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 170.0,
+          "height": 58.02127659574469
+        },
+        "B": {
+          "x": 0.0,
+          "y": 62.02127659574469,
+          "width": 83.0,
+          "height": 42.97872340425532
+        },
+        "C": {
+          "x": 87.0,
+          "y": 62.02127659574469,
+          "width": 83.0,
+          "height": 42.97872340425532
+        }
+      },
+      "verified": false,
+      "source": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/submit-electronic-artwork/"
+    },
+    "wide_triptych": {
+      "profile": "taylor_francis_generic",
+      "assembly": "wide_triptych",
+      "description": "Wide overview above three compact diagnostics",
+      "canvas_mm": {
+        "width": 170.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 170.0,
+          "height": 83.87234042553192
+        },
+        "B": {
+          "x": 0.0,
+          "y": 87.87234042553192,
+          "width": 54.0,
+          "height": 62.12765957446808
+        },
+        "C": {
+          "x": 58.0,
+          "y": 87.87234042553192,
+          "width": 54.0,
+          "height": 62.12765957446808
+        },
+        "D": {
+          "x": 116.0,
+          "y": 87.87234042553192,
+          "width": 54.0,
+          "height": 62.12765957446808
+        }
+      },
+      "verified": false,
+      "source": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/submit-electronic-artwork/"
+    },
+    "staggered": {
+      "profile": "taylor_francis_generic",
+      "assembly": "staggered",
+      "description": "Two wide and two narrow panels with intentionally offset boundaries",
+      "canvas_mm": {
+        "width": 170.0,
+        "height": 105.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 112.0,
+          "height": 50.5
+        },
+        "B": {
+          "x": 116.0,
+          "y": 0.0,
+          "width": 54.0,
+          "height": 50.5
+        },
+        "C": {
+          "x": 0.0,
+          "y": 54.5,
+          "width": 54.0,
+          "height": 50.5
+        },
+        "D": {
+          "x": 58.0,
+          "y": 54.5,
+          "width": 112.0,
+          "height": 50.5
+        }
+      },
+      "verified": false,
+      "source": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/submit-electronic-artwork/"
+    },
+    "sidebar_matrix": {
+      "profile": "taylor_francis_generic",
+      "assembly": "sidebar_matrix",
+      "description": "Long contextual panel beside one wide and two compact panels",
+      "canvas_mm": {
+        "width": 170.0,
+        "height": 150.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 47.1063829787234,
+          "height": 150.0
+        },
+        "B": {
+          "x": 51.1063829787234,
+          "y": 0.0,
+          "width": 118.8936170212766,
+          "height": 73.0
+        },
+        "C": {
+          "x": 51.1063829787234,
+          "y": 77.0,
+          "width": 57.4468085106383,
+          "height": 73.0
+        },
+        "D": {
+          "x": 112.5531914893617,
+          "y": 77.0,
+          "width": 57.4468085106383,
+          "height": 73.0
+        }
+      },
+      "verified": false,
+      "source": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/submit-electronic-artwork/"
+    },
+    "long_story": {
+      "profile": "taylor_francis_generic",
+      "assembly": "long_story",
+      "description": "Tall single-column narrative with overview, paired details and summary",
+      "canvas_mm": {
+        "width": 85.0,
+        "height": 130.0
+      },
+      "gap_mm": 4.0,
+      "slots_mm": {
+        "A": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 85.0,
+          "height": 65.2987012987013
+        },
+        "B": {
+          "x": 0.0,
+          "y": 69.2987012987013,
+          "width": 40.5,
+          "height": 30.649350649350648
+        },
+        "C": {
+          "x": 44.5,
+          "y": 69.2987012987013,
+          "width": 40.5,
+          "height": 30.649350649350648
+        },
+        "D": {
+          "x": 0.0,
+          "y": 103.94805194805195,
+          "width": 85.0,
+          "height": 26.05194805194805
+        }
+      },
+      "verified": false,
+      "source": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/submit-electronic-artwork/"
+    }
+  }
+}

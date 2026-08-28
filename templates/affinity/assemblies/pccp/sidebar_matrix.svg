@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="171.0mm" height="150.0mm"
+     viewBox="0 0 171.0 150.0">
+  <title>tcfig pccp sidebar_matrix assembly</title>
+  <style>
+    .panel { font-family: Arial, Helvetica, sans-serif; font-size: 3.969px;
+              font-weight: bold; text-anchor: middle; dominant-baseline: middle; fill: #171717; }
+    .info { font-family: Arial, Helvetica, sans-serif; font-size: 2.646px; fill: #171717; }
+    .small { font-size: 2.200px; fill: #666666; }
+  </style>
+  <rect x="0" y="0" width="171.0" height="150.0" fill="#FFFFFF" stroke="#171717" stroke-width="0.25" />
+  <g id="SLOT_A"><rect x="0.000" y="0.000" width="47.397" height="150.000" fill="#AACCEE" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="23.699" y="75.000">A</text></g><g id="SLOT_B"><rect x="51.397" y="0.000" width="119.603" height="73.000" fill="#CCEEFF" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="111.199" y="36.500">B</text></g><g id="SLOT_C"><rect x="51.397" y="77.000" width="57.801" height="73.000" fill="#BBDDBB" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="80.298" y="113.500">C</text></g><g id="SLOT_D"><rect x="113.199" y="77.000" width="57.801" height="73.000" fill="#EEEEBB" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="142.099" y="113.500">D</text></g>
+  <g id="INFO">
+    <rect x="2" y="136.000" width="118.000" height="12" fill="#FFFFFF" fill-opacity="0.92" />
+    <text class="info" x="4" y="140.500">tcfig · pccp · sidebar_matrix · 171 × 150 mm</text>
+    <text class="info small" x="4" y="144.800">gap 4 mm · verified · place at 100%</text>
+  </g>
+</svg>

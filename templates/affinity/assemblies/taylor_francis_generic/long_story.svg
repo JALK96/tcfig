@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="85.0mm" height="130.0mm"
+     viewBox="0 0 85.0 130.0">
+  <title>tcfig taylor_francis_generic long_story assembly</title>
+  <style>
+    .panel { font-family: Arial, Helvetica, sans-serif; font-size: 4.234px;
+              font-weight: bold; text-anchor: middle; dominant-baseline: middle; fill: #171717; }
+    .info { font-family: Arial, Helvetica, sans-serif; font-size: 2.822px; fill: #171717; }
+    .small { font-size: 2.200px; fill: #666666; }
+  </style>
+  <rect x="0" y="0" width="85.0" height="130.0" fill="#FFFFFF" stroke="#171717" stroke-width="0.25" />
+  <g id="SLOT_A"><rect x="0.000" y="0.000" width="85.000" height="65.299" fill="#AACCEE" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="42.500" y="32.649">A</text></g><g id="SLOT_B"><rect x="0.000" y="69.299" width="40.500" height="30.649" fill="#CCEEFF" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="20.250" y="84.623">B</text></g><g id="SLOT_C"><rect x="44.500" y="69.299" width="40.500" height="30.649" fill="#BBDDBB" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="64.750" y="84.623">C</text></g><g id="SLOT_D"><rect x="0.000" y="103.948" width="85.000" height="26.052" fill="#EEEEBB" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="42.500" y="116.974">D</text></g>
+  <g id="INFO">
+    <rect x="2" y="116.000" width="81.000" height="12" fill="#FFFFFF" fill-opacity="0.92" />
+    <text class="info" x="4" y="120.500">tcfig · taylor_francis_generic · long_story · 85 × 130 mm</text>
+    <text class="info small" x="4" y="124.800">gap 4 mm · verify before use · place at 100%</text>
+  </g>
+</svg>

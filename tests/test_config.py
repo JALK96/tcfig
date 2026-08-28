@@ -13,4 +13,5 @@ def test_aliases_resolve():
 
 def test_palette_tokens_exist():
     assert len(get_tokens()["color"]["palettes"]["tol_bright"]) == 7
-
+    assert len(get_tokens()["color"]["palettes"]["tol_vibrant"]) == 7
+    assert len(get_tokens()["color"]["palettes"]["tol_dark"]) == 11

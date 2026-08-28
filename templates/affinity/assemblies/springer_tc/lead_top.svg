@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="174.0mm" height="105.0mm"
+     viewBox="0 0 174.0 105.0">
+  <title>tcfig springer_tc lead_top assembly</title>
+  <style>
+    .panel { font-family: Arial, Helvetica, sans-serif; font-size: 4.234px;
+              font-weight: bold; text-anchor: middle; dominant-baseline: middle; fill: #171717; }
+    .info { font-family: Arial, Helvetica, sans-serif; font-size: 2.822px; fill: #171717; }
+    .small { font-size: 2.200px; fill: #666666; }
+  </style>
+  <rect x="0" y="0" width="174.0" height="105.0" fill="#FFFFFF" stroke="#171717" stroke-width="0.25" />
+  <g id="SLOT_A"><rect x="0.000" y="0.000" width="174.000" height="58.021" fill="#AACCEE" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="87.000" y="29.011">A</text></g><g id="SLOT_B"><rect x="0.000" y="62.021" width="85.000" height="42.979" fill="#CCEEFF" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="42.500" y="83.511">B</text></g><g id="SLOT_C"><rect x="89.000" y="62.021" width="85.000" height="42.979" fill="#BBDDBB" stroke="#4477AA" stroke-width="0.25" /><text class="panel" x="131.500" y="83.511">C</text></g>
+  <g id="INFO">
+    <rect x="2" y="91.000" width="118.000" height="12" fill="#FFFFFF" fill-opacity="0.92" />
+    <text class="info" x="4" y="95.500">tcfig · springer_tc · lead_top · 174 × 105 mm</text>
+    <text class="info small" x="4" y="99.800">gap 4 mm · verified · place at 100%</text>
+  </g>
+</svg>
