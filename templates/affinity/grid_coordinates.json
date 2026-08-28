@@ -1,0 +1,245 @@
+{
+  "house": {
+    "profile": "house",
+    "canvas_mm": {
+      "width": 180.0,
+      "height": 150.0
+    },
+    "single_width_mm": 85.0,
+    "gap_mm": 4.0,
+    "two_panel_width_mm": 88.0,
+    "three_panel_width_mm": 57.333333333333336,
+    "vertical_guides_mm": [
+      57.333333333333336,
+      61.333333333333336,
+      118.66666666666667,
+      122.66666666666667,
+      88.0,
+      92.0
+    ],
+    "horizontal_guides_mm": [
+      46.0,
+      50.0,
+      96.0,
+      100.0
+    ],
+    "verified": true,
+    "source": "internal"
+  },
+  "jctc": {
+    "profile": "jctc",
+    "canvas_mm": {
+      "width": 177.8,
+      "height": 150.0
+    },
+    "single_width_mm": 84.6,
+    "gap_mm": 4.0,
+    "two_panel_width_mm": 86.9,
+    "three_panel_width_mm": 56.6,
+    "vertical_guides_mm": [
+      56.6,
+      60.6,
+      117.2,
+      121.2,
+      86.9,
+      90.9
+    ],
+    "horizontal_guides_mm": [
+      46.0,
+      50.0,
+      96.0,
+      100.0
+    ],
+    "verified": true,
+    "source": "https://researcher-resources.acs.org/publish/author_guidelines?coden=jctcce"
+  },
+  "jcp": {
+    "profile": "jcp",
+    "canvas_mm": {
+      "width": 170.0,
+      "height": 150.0
+    },
+    "single_width_mm": 85.0,
+    "gap_mm": 4.0,
+    "two_panel_width_mm": 83.0,
+    "three_panel_width_mm": 54.0,
+    "vertical_guides_mm": [
+      54.0,
+      58.0,
+      112.0,
+      116.0,
+      83.0,
+      87.0
+    ],
+    "horizontal_guides_mm": [
+      46.0,
+      50.0,
+      96.0,
+      100.0
+    ],
+    "verified": true,
+    "source": "https://publishing.aip.org/resources/researchers/author-instructions/"
+  },
+  "pccp": {
+    "profile": "pccp",
+    "canvas_mm": {
+      "width": 171.0,
+      "height": 150.0
+    },
+    "single_width_mm": 83.0,
+    "gap_mm": 4.0,
+    "two_panel_width_mm": 83.5,
+    "three_panel_width_mm": 54.333333333333336,
+    "vertical_guides_mm": [
+      54.333333333333336,
+      58.333333333333336,
+      112.66666666666667,
+      116.66666666666667,
+      83.5,
+      87.5
+    ],
+    "horizontal_guides_mm": [
+      46.0,
+      50.0,
+      96.0,
+      100.0
+    ],
+    "verified": true,
+    "source": "https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/pccp"
+  },
+  "wiley_jcc": {
+    "profile": "wiley_jcc",
+    "canvas_mm": {
+      "width": 169.06,
+      "height": 150.0
+    },
+    "single_width_mm": 80.96,
+    "gap_mm": 4.0,
+    "two_panel_width_mm": 82.53,
+    "three_panel_width_mm": 53.68666666666667,
+    "vertical_guides_mm": [
+      53.68666666666667,
+      57.68666666666667,
+      111.37333333333333,
+      115.37333333333333,
+      82.53,
+      86.53
+    ],
+    "horizontal_guides_mm": [
+      46.0,
+      50.0,
+      96.0,
+      100.0
+    ],
+    "verified": true,
+    "source": "https://onlinelibrary.wiley.com/page/journal/1096987x/homepage/forauthors.html"
+  },
+  "springer_tc": {
+    "profile": "springer_tc",
+    "canvas_mm": {
+      "width": 174.0,
+      "height": 150.0
+    },
+    "single_width_mm": 84.0,
+    "gap_mm": 4.0,
+    "two_panel_width_mm": 85.0,
+    "three_panel_width_mm": 55.333333333333336,
+    "vertical_guides_mm": [
+      55.333333333333336,
+      59.333333333333336,
+      114.66666666666667,
+      118.66666666666667,
+      85.0,
+      89.0
+    ],
+    "horizontal_guides_mm": [
+      46.0,
+      50.0,
+      96.0,
+      100.0
+    ],
+    "verified": true,
+    "source": "https://www.springer.com/kr/authors-editors/journal-author/journal-author-helpdesk/manuscript-preparation/1260"
+  },
+  "elsevier_tc": {
+    "profile": "elsevier_tc",
+    "canvas_mm": {
+      "width": 190.0,
+      "height": 150.0
+    },
+    "single_width_mm": 90.0,
+    "gap_mm": 4.0,
+    "two_panel_width_mm": 93.0,
+    "three_panel_width_mm": 60.666666666666664,
+    "vertical_guides_mm": [
+      60.666666666666664,
+      64.66666666666666,
+      125.33333333333333,
+      129.33333333333331,
+      93.0,
+      97.0
+    ],
+    "horizontal_guides_mm": [
+      46.0,
+      50.0,
+      96.0,
+      100.0
+    ],
+    "verified": true,
+    "source": "https://www.elsevier.com/en-gb/about/policies-and-standards/author/artwork-and-media-instructions/artwork-sizing"
+  },
+  "nature": {
+    "profile": "nature",
+    "canvas_mm": {
+      "width": 183.0,
+      "height": 150.0
+    },
+    "single_width_mm": 89.0,
+    "gap_mm": 4.0,
+    "two_panel_width_mm": 89.5,
+    "three_panel_width_mm": 58.333333333333336,
+    "vertical_guides_mm": [
+      58.333333333333336,
+      62.333333333333336,
+      120.66666666666667,
+      124.66666666666667,
+      89.5,
+      93.5
+    ],
+    "horizontal_guides_mm": [
+      46.0,
+      50.0,
+      96.0,
+      100.0
+    ],
+    "verified": true,
+    "source": "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/"
+  },
+  "taylor_francis_generic": {
+    "profile": "taylor_francis_generic",
+    "canvas_mm": {
+      "width": 170.0,
+      "height": 150.0
+    },
+    "single_width_mm": 85.0,
+    "gap_mm": 4.0,
+    "two_panel_width_mm": 83.0,
+    "three_panel_width_mm": 54.0,
+    "vertical_guides_mm": [
+      54.0,
+      58.0,
+      112.0,
+      116.0,
+      83.0,
+      87.0
+    ],
+    "horizontal_guides_mm": [
+      46.0,
+      50.0,
+      96.0,
+      100.0
+    ],
+    "verified": false,
+    "source": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/submit-electronic-artwork/"
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="190.0mm" height="150.0mm"
+     viewBox="0 0 190.0 150.0">
+  <title>tcfig elsevier_tc composition grid</title>
+  <style>
+    .border { fill: #ffffff; stroke: #171717; stroke-width: 0.25; }
+    .guide { fill: none; stroke: #56B4E9; stroke-width: 0.18; stroke-dasharray: 1.2 1.2; }
+    .guide .strong { stroke: #0072B2; stroke-dasharray: none; }
+    .single { fill: #E6F4FA; fill-opacity: 0.32; stroke: #DDAA33; stroke-width: 0.22; }
+    .label { font-family: Arial, Helvetica, sans-serif; font-size: 3.000px; fill: #171717; }
+    .small { font-size: 2.200px; fill: #666666; }
+  </style>
+  <g id="BACKGROUND"><rect class="border" x="0" y="0" width="190.0" height="150.0" /></g>
+  <g id="SINGLE_COLUMN_REFERENCE"><rect x="0" y="0" width="90.000" height="70.000" class="single" /></g>
+  <g id="GRID" class="guide"><line x1="60.667" y1="0" x2="60.667" y2="150.000" /><line x1="64.667" y1="0" x2="64.667" y2="150.000" /><line x1="125.333" y1="0" x2="125.333" y2="150.000" /><line x1="129.333" y1="0" x2="129.333" y2="150.000" /><line x1="93.000" y1="0" x2="93.000" y2="150.000" class="strong" /><line x1="97.000" y1="0" x2="97.000" y2="150.000" class="strong" /><line x1="0" y1="46.000" x2="190.000" y2="46.000" /><line x1="0" y1="50.000" x2="190.000" y2="50.000" /><line x1="0" y1="96.000" x2="190.000" y2="96.000" /><line x1="0" y1="100.000" x2="190.000" y2="100.000" /></g>
+  <g id="INFO">
+    <rect x="2" y="135.000" width="88.000" height="13" fill="#FFFFFF" fill-opacity="0.9" />
+    <text class="label" x="4" y="140.000">tcfig · elsevier_tc · 190 × 150 mm</text>
+    <text class="label small" x="4" y="144.500">gap 4 mm · verified · place plots at 100%</text>
+  </g>
+</svg>

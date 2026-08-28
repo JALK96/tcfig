@@ -1,0 +1,147 @@
+[profiles.house]
+label = "tcfig house standard"
+publisher = "internal"
+source = "internal"
+verified = true
+widths_mm = { single = 85.0, intermediate = 130.0, double = 180.0 }
+max_height_mm = 180.0
+base_font_pt = 8.0
+min_font_pt = 6.5
+max_font_pt = 12.0
+min_line_pt = 0.5
+raster_photo_dpi = 300
+raster_combo_dpi = 600
+raster_line_dpi = 1200
+
+[profiles.jctc]
+label = "ACS / Journal of Chemical Theory and Computation"
+publisher = "ACS"
+source = "https://researcher-resources.acs.org/publish/author_guidelines?coden=jctcce"
+verified = true
+widths_mm = { single = 84.6, intermediate = 105.8, double = 177.8 }
+max_height_mm = 232.8
+base_font_pt = 8.0
+min_font_pt = 4.5
+max_font_pt = 12.0
+min_line_pt = 0.5
+raster_photo_dpi = 300
+raster_combo_dpi = 600
+raster_line_dpi = 1200
+
+[profiles.jcp]
+label = "AIP / The Journal of Chemical Physics"
+publisher = "AIP"
+source = "https://publishing.aip.org/resources/researchers/author-instructions/"
+verified = true
+widths_mm = { single = 85.0, double = 170.0 }
+max_height_mm = 211.0
+base_font_pt = 8.0
+min_font_pt = 8.0
+max_font_pt = 12.0
+min_line_pt = 0.5
+raster_photo_dpi = 300
+raster_combo_dpi = 600
+raster_line_dpi = 600
+
+[profiles.pccp]
+label = "RSC / Physical Chemistry Chemical Physics"
+publisher = "RSC"
+source = "https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/pccp"
+verified = true
+widths_mm = { single = 83.0, double = 171.0 }
+max_height_mm = 233.0
+base_font_pt = 7.5
+min_font_pt = 7.0
+max_font_pt = 12.0
+min_line_pt = 0.5
+raster_photo_dpi = 600
+raster_combo_dpi = 600
+raster_line_dpi = 600
+
+[profiles.wiley_jcc]
+label = "Wiley / Journal of Computational Chemistry"
+publisher = "Wiley"
+source = "https://onlinelibrary.wiley.com/page/journal/1096987x/homepage/forauthors.html"
+verified = true
+widths_mm = { single = 80.96, double = 169.06 }
+max_height_mm = 220.0
+base_font_pt = 10.0
+min_font_pt = 10.0
+max_font_pt = 12.0
+min_line_pt = 0.5
+raster_photo_dpi = 300
+raster_combo_dpi = 600
+raster_line_dpi = 1200
+
+[profiles.springer_tc]
+label = "Springer theoretical chemistry"
+publisher = "Springer Nature"
+source = "https://www.springer.com/kr/authors-editors/journal-author/journal-author-helpdesk/manuscript-preparation/1260"
+verified = true
+widths_mm = { minimal = 39.0, single = 84.0, intermediate = 129.0, double = 174.0 }
+max_height_mm = 234.0
+base_font_pt = 8.0
+min_font_pt = 8.0
+max_font_pt = 12.0
+min_line_pt = 0.3
+raster_photo_dpi = 300
+raster_combo_dpi = 600
+raster_line_dpi = 1200
+
+[profiles.elsevier_tc]
+label = "Elsevier theoretical chemistry"
+publisher = "Elsevier"
+source = "https://www.elsevier.com/en-gb/about/policies-and-standards/author/artwork-and-media-instructions/artwork-sizing"
+verified = true
+widths_mm = { minimal = 30.0, single = 90.0, intermediate = 140.0, double = 190.0 }
+max_height_mm = 230.0
+base_font_pt = 7.0
+min_font_pt = 6.0
+max_font_pt = 10.0
+min_line_pt = 0.5
+raster_photo_dpi = 300
+raster_combo_dpi = 500
+raster_line_dpi = 1000
+
+[profiles.nature]
+label = "Nature flagship"
+publisher = "Nature Portfolio"
+source = "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/"
+verified = true
+widths_mm = { single = 89.0, intermediate = 120.0, double = 183.0 }
+max_height_mm = 170.0
+base_font_pt = 6.5
+min_font_pt = 5.0
+max_font_pt = 7.0
+min_line_pt = 0.5
+raster_photo_dpi = 300
+raster_combo_dpi = 600
+raster_line_dpi = 1200
+
+[profiles.taylor_francis_generic]
+label = "Taylor & Francis working profile"
+publisher = "Taylor & Francis"
+source = "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/submit-electronic-artwork/"
+verified = false
+widths_mm = { single = 85.0, double = 170.0 }
+max_height_mm = 220.0
+base_font_pt = 8.0
+min_font_pt = 8.0
+max_font_pt = 12.0
+min_line_pt = 0.3
+raster_photo_dpi = 300
+raster_combo_dpi = 600
+raster_line_dpi = 1200
+
+[aliases]
+acs = "jctc"
+aip = "jcp"
+rsc = "pccp"
+jcc = "wiley_jcc"
+ijqc = "wiley_jcc"
+tca = "springer_tc"
+chemical_physics = "elsevier_tc"
+computational_theoretical_chemistry = "elsevier_tc"
+molecular_physics = "taylor_francis_generic"
+molecular_simulation = "taylor_francis_generic"
+

@@ -1,0 +1,76 @@
+version = "0.1.0"
+
+[typography]
+families = ["Arial", "Helvetica", "Liberation Sans", "DejaVu Sans"]
+math_family = "stixsans"
+weight_regular = "normal"
+weight_emphasis = "bold"
+
+[line]
+data_pt = 1.0
+emphasis_pt = 1.4
+axis_pt = 0.5
+grid_pt = 0.35
+error_pt = 0.6
+replica_pt = 0.65
+
+[marker]
+size_pt = 3.8
+edge_pt = 0.5
+
+[layout]
+panel_gap_mm = 4.0
+outer_pad_mm = 1.5
+axes_pad_mm = 1.5
+
+[layout.heights_mm.single]
+compact = 50.0
+standard = 70.0
+tall = 95.0
+full = 130.0
+
+[layout.heights_mm.intermediate]
+compact = 60.0
+standard = 85.0
+tall = 115.0
+full = 150.0
+
+[layout.heights_mm.double]
+compact = 70.0
+standard = 105.0
+tall = 150.0
+full = 180.0
+
+[color.semantic]
+foreground = "#171717"
+secondary = "#666666"
+muted = "#A6A6A6"
+light = "#D9D9D9"
+missing = "#E5E5E5"
+background = "#FFFFFF"
+reference = "#4D4D4D"
+
+[color.palettes]
+tol_high_contrast = ["#004488", "#DDAA33", "#BB5566"]
+tol_bright = ["#4477AA", "#EE6677", "#228833", "#CCBB44", "#66CCEE", "#AA3377", "#BBBBBB"]
+tol_muted = ["#CC6677", "#332288", "#DDCC77", "#117733", "#88CCEE", "#882255", "#44AA99", "#999933", "#AA4499"]
+tol_medium_contrast = ["#6699CC", "#004488", "#EECC66", "#994455", "#997700", "#EE99AA"]
+okabe_ito = ["#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7"]
+
+[color.colormaps]
+scientific_sequential = "batlow"
+scientific_diverging = "vik"
+scientific_cyclic = "romaO"
+fallback_sequential = "viridis"
+fallback_diverging = "RdBu_r"
+fallback_cyclic = "twilight"
+
+[validation]
+forbidden_colormaps = ["jet", "rainbow", "gist_rainbow", "hsv", "nipy_spectral"]
+dimension_tolerance_mm = 0.15
+
+[export]
+formats = ["pdf", "svg", "png"]
+png_dpi = 600
+transparent = false
+
