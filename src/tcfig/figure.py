@@ -7,7 +7,7 @@ from contextlib import contextmanager
 from typing import Any
 
 from .config import JournalProfile, get_profile, get_tokens
-from .styles import style_context
+from .styles import panel_label_size, style_context
 
 MM_PER_INCH = 25.4
 
@@ -138,8 +138,13 @@ def label_panels(
     *,
     x: float = -0.16,
     y: float = 1.04,
+    fontsize: float | None = None,
 ) -> list[Any]:
-    """Place consistent lower-case panel labels in axes coordinates."""
+    """Place consistent lower-case panel labels in axes coordinates.
+
+    The default size is the active profile's base font plus the panel-label
+    increment defined in the design tokens.
+    """
 
     import numpy as np
 
@@ -150,6 +155,8 @@ def label_panels(
     panel_labels = labels or tuple(chr(ord("a") + index) for index in range(len(flat)))
     if len(panel_labels) != len(flat):
         raise ValueError("The number of panel labels must match the number of axes.")
+    resolved_fontsize = panel_label_size() if fontsize is None else float(fontsize)
+    panel_color = str(get_tokens()["color"]["semantic"]["foreground"])
     return [
         ax.text(
             x,
@@ -158,7 +165,9 @@ def label_panels(
             transform=ax.transAxes,
             ha="left",
             va="bottom",
+            fontsize=resolved_fontsize,
             fontweight="bold",
+            color=panel_color,
             clip_on=False,
         )
         for ax, label in zip(flat, panel_labels, strict=True)

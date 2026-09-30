@@ -1,6 +1,6 @@
 # Regelwerk für wissenschaftliche Abbildungen
 
-Version 0.1 — Schwerpunkt Theoretical Chemistry und Molecular Dynamics
+Version 0.3 — Schwerpunkt Theoretical Chemistry und Molecular Dynamics
 
 ## 1. Grundprinzipien
 
@@ -30,6 +30,11 @@ Empfohlene Abstände:
 - mindestens 2 mm zwischen Beschriftung und angrenzendem Panel
 - gemeinsame Achsen und Plotflächen bei direkten Vergleichen ausrichten
 - Panelreihenfolge von links oben nach rechts unten
+
+Asymmetrische Abstände werden als eigene GridSpec-Spuren angelegt. Mit
+`fixed_mm(...)` und `resolve_track_ratios(...)` können solche Spuren physisch
+definiert werden; `available_mm` bezeichnet dabei die tatsächliche GridSpec-Breite
+oder -Höhe ohne Außenränder und zusätzliche `wspace`-/`hspace`-Abstände.
 
 ### Asymmetrische Assemblies
 
@@ -63,10 +68,22 @@ Position und Abstand.
 
 - Satzanfang groß, ansonsten sentence case
 - Variablen kursiv, Einheiten aufrecht
-- Achsenformat: `Quantity (unit)`
+- Achsenformat: `Quantity, symbol (unit)` oder, bei eindeutigem Symbol,
+  `symbol (unit)`
+- dimensionslose Größen erhalten keine künstliche Einheit
+- Ladungsmengen in Vielfachen der Elementarladung werden als `Q/e` oder
+  „charge number“ bezeichnet; „charge density“ ist nur mit einem expliziten
+  Flächen- oder Volumennenner zulässig
+- bei Facetten wird die Einheit einer Bedingungsvariable einmal in der
+  Gruppenüberschrift angegeben; einzelne Facettenwerte bleiben einheitenlos
 - Unicode-Minus statt Bindestrich, wenn vom Export unterstützt
 - keine farbigen Fließtexte oder Legendentexte
-- Panelbuchstaben klein, fett und ohne Klammern: **a**, **b**, **c**
+- Panelbuchstaben klein, fett und ohne Klammern: **a**, **b**, **c**; ihre
+  semantische Größe liegt 2 pt über der Profil-Basisschrift
+- Panelbuchstaben bleiben im Vordergrundschwarz; andere schwarze Fettlabels für
+  Gruppen, Facetten oder kurze Überschriften verwenden das semantische Grau
+  `group_label`. Datenkodierte Farben und kontrastbedingte weiße Schrift sind
+  begründete Ausnahmen.
 - kein Titel im Plot, wenn Caption oder Panelüberschrift dieselbe Information trägt
 
 ## 4. Linien, Marker und Achsen

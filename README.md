@@ -17,6 +17,9 @@ Der wichtigste Grundsatz lautet:
 - semantische, farbenblindfreundliche Paletten
 - MD-spezifische Plotbausteine für Replikate, Verteilungen, freie Energien und RDFs
 - sechs benannte asymmetrische Assemblies für Wide-, Long- und Lead/Detail-Figures
+- semantische Panelbuchstaben, konsistente Größen-/Einheitenlabels und feste
+  Abstandsspuren in Millimetern
+- graue Gruppenüberschriften bei schwarzen Panelbuchstaben
 - Export als PDF, SVG und PNG ohne `bbox_inches="tight"`
 - Prüfung von Maßen, Schriftgrößen, Linien und problematischen Colormaps
 - Affinity-kompatible SVG-Raster und eine ASE-Farbpalette
@@ -50,6 +53,17 @@ with tcfig.assembly_canvas("lead_right", profile="jctc") as (fig, axes):
     axes["B"].plot(x, detail)  # Diagnose 1
     axes["C"].plot(x, check)   # Diagnose 2
     tcfig.label_panels(axes)
+```
+
+Achsenlabels und bewusst asymmetrische GridSpec-Abstände können unabhängig vom
+konkreten Journalprofil formuliert werden:
+
+```python
+ax.set_xlabel(tcfig.quantity_label("Distance", "$r$", "nm"))
+width_ratios = tcfig.resolve_track_ratios(
+    (1, 1, tcfig.fixed_mm(5), 1),
+    available_mm=170,
+)
 ```
 
 Ausführliche Entscheidungen stehen in [docs/REGELWERK.md](docs/REGELWERK.md).

@@ -19,6 +19,7 @@ def rc_params(profile: str | JournalProfile = "house") -> dict[str, Any]:
     marker = tokens["marker"]
     colors = tokens["color"]
     foreground = colors["semantic"]["foreground"]
+    group_label = colors["semantic"]["group_label"]
     bright = colors["palettes"]["tol_bright"]
 
     return {
@@ -28,6 +29,7 @@ def rc_params(profile: str | JournalProfile = "house") -> dict[str, Any]:
         "mathtext.fontset": typography["math_family"],
         "axes.labelsize": publication.base_font_pt,
         "axes.titlesize": publication.base_font_pt,
+        "axes.titlecolor": group_label,
         "axes.titleweight": "bold",
         "axes.titlelocation": "left",
         "axes.linewidth": line["axis_pt"],
@@ -60,6 +62,8 @@ def rc_params(profile: str | JournalProfile = "house") -> dict[str, Any]:
         "legend.handletextpad": 0.5,
         "legend.borderaxespad": 0.2,
         "text.color": foreground,
+        "figure.labelsize": publication.base_font_pt,
+        "figure.titlesize": publication.base_font_pt,
         "figure.facecolor": colors["semantic"]["background"],
         "figure.edgecolor": colors["semantic"]["background"],
         "savefig.facecolor": colors["semantic"]["background"],
@@ -70,6 +74,22 @@ def rc_params(profile: str | JournalProfile = "house") -> dict[str, Any]:
         "ps.fonttype": 42,
         "svg.fonttype": "none",
     }
+
+
+def panel_label_size(profile: str | JournalProfile | None = None) -> float:
+    """Return the semantic panel-label size for a profile or active style context."""
+
+    if profile is None:
+        try:
+            import matplotlib as mpl
+        except ImportError as exc:
+            raise RuntimeError("tcfig plotting requires Matplotlib.") from exc
+        base_size = float(mpl.rcParams["font.size"])
+    else:
+        publication = get_profile(profile) if isinstance(profile, str) else profile
+        base_size = float(publication.base_font_pt)
+    delta = float(get_tokens()["typography"]["panel_label_delta_pt"])
+    return base_size + delta
 
 
 def _cycler(colors: list[str]):

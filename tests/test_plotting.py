@@ -45,4 +45,30 @@ def test_asymmetric_assembly_dimensions_and_labels():
         assert fig.get_size_inches()[0] * 25.4 == pytest.approx(177.8, abs=0.05)
         labels = tcfig.label_panels(axes)
         assert [label.get_text() for label in labels] == ["a", "b", "c"]
+        assert all(label.get_fontsize() == pytest.approx(10.0) for label in labels)
+        assert all(label.get_color() == tcfig.semantic_color("foreground") for label in labels)
         assert tcfig.validate_figure(fig).ok
+
+
+def test_bold_axes_titles_use_group_label_gray():
+    params = tcfig.rc_params("jcp")
+    assert params["axes.titleweight"] == "bold"
+    assert params["axes.titlecolor"] == tcfig.semantic_color("group_label")
+
+
+def test_quantity_label_variants():
+    assert tcfig.quantity_label("Distance", "$r$", "nm") == "Distance, $r$ (nm)"
+    assert tcfig.quantity_label(symbol="$g(r)$") == "$g(r)$"
+    assert tcfig.quantity_label("Probability") == "Probability"
+    with pytest.raises(ValueError, match="quantity or symbol"):
+        tcfig.quantity_label(unit="nm")
+
+
+def test_fixed_track_ratios_preserve_requested_spacing():
+    ratios = tcfig.resolve_track_ratios(
+        (1.0, 1.0, tcfig.fixed_mm(5.0), 1.0),
+        available_mm=95.0,
+    )
+    assert ratios == pytest.approx((30.0, 30.0, 5.0, 30.0))
+    with pytest.raises(ValueError, match="leave positive space"):
+        tcfig.resolve_track_ratios((1.0, tcfig.fixed_mm(95.0)), available_mm=95.0)

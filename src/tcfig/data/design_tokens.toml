@@ -1,10 +1,11 @@
-version = "0.2.0"
+version = "0.3.0"
 
 [typography]
 families = ["Arial", "Helvetica", "Liberation Sans", "DejaVu Sans"]
 math_family = "stixsans"
 weight_regular = "normal"
 weight_emphasis = "bold"
+panel_label_delta_pt = 2.0
 
 [line]
 data_pt = 1.0
@@ -43,6 +44,7 @@ full = 180.0
 
 [color.semantic]
 foreground = "#171717"
+group_label = "#666666"
 secondary = "#666666"
 muted = "#A6A6A6"
 light = "#D9D9D9"
