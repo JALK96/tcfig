@@ -11,6 +11,24 @@ weight_regular = "normal"
 weight_emphasis = "bold"
 panel_label_delta_pt = 2.0
 
+
+# Optional LaTeX typesetting (typesetting="latex-<name>"): LuaLaTeX via Matplotlib's
+# pgf backend with fontspec/unicode-math. Fonts come from the TeX installation.
+[typography.latex]
+texsystem = "lualatex"
+
+[typography.latex.sans]
+text = "Fira Sans"
+math = "Fira Math"
+
+[typography.latex.serif]
+text = "STIX Two Text"
+math = "STIX Two Math"
+
+[typography.latex.modern]
+text = "Latin Modern Roman"
+math = "Latin Modern Math"
+
 [line]
 data_pt = 1.0
 emphasis_pt = 1.4

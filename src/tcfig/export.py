@@ -54,10 +54,16 @@ def export(
         raise ValueError(f"Figure validation failed: {details}")
 
     tokens = get_tokens()
+    typesetting = metadata.get("typesetting", "mathtext")
+    latex = typesetting != "mathtext"
     chosen_formats = tuple(formats or tokens["export"]["formats"])
-    invalid = set(chosen_formats) - {"pdf", "svg", "png"}
+    if latex:
+        chosen_formats = tuple(f for f in chosen_formats if f != "svg") if formats is None else chosen_formats
+    invalid = set(chosen_formats) - ({"pdf", "png"} if latex else {"pdf", "svg", "png"})
     if invalid:
-        raise ValueError(f"Unsupported export format(s): {', '.join(sorted(invalid))}.")
+        raise ValueError(f"Unsupported export format(s) for {typesetting}: {', '.join(sorted(invalid))}.")
+    if latex:
+        _require_texsystem(tokens["typography"]["latex"]["texsystem"])
     chosen_dpi = int(dpi or tokens["export"]["png_dpi"])
     chosen_transparency = (
         bool(tokens["export"]["transparent"]) if transparent is None else transparent
@@ -66,7 +72,7 @@ def export(
     files: list[Path] = []
     # Save inside the profile style: font embedding (TrueType in PDF/PS, text in
     # SVG) and math fonts are read at save time, not when the figure was built.
-    with style_context(publication):
+    with style_context(publication, typesetting):
         for format_name in chosen_formats:
             path = base.with_suffix(f".{format_name}")
             save_kwargs: dict[str, Any] = {
@@ -75,6 +81,8 @@ def export(
             }
             if format_name == "png":
                 save_kwargs["dpi"] = chosen_dpi
+            if latex:
+                save_kwargs["backend"] = "pgf"  # LuaLaTeX typesets text and math
             fig.savefig(path, **save_kwargs)
             files.append(path)
 
@@ -89,6 +97,7 @@ def export(
         "dimensions_mm": {"width": report.width_mm, "height": report.height_mm},
         "assembly": metadata.get("assembly"),
         "base_font_pt": publication.base_font_pt,
+        "typesetting": typesetting,
         "formats": list(chosen_formats),
         "png_dpi": chosen_dpi if "png" in chosen_formats else None,
         "transparent": chosen_transparency,
@@ -102,6 +111,16 @@ def export(
     metadata_file = base.with_suffix(".figure.json")
     metadata_file.write_text(json.dumps(audit, indent=2, ensure_ascii=False), encoding="utf-8")
     return ExportResult(tuple(files), metadata_file, tuple(data_files), report)
+
+
+def _require_texsystem(texsystem: str) -> None:
+    import shutil
+
+    if shutil.which(texsystem) is None:
+        raise RuntimeError(
+            f"LaTeX typesetting needs {texsystem!r} on PATH (TeX Live with fontspec, "
+            "unicode-math and the configured fonts). Use typesetting='mathtext' otherwise."
+        )
 
 
 def _resolve_profile(

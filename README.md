@@ -79,3 +79,12 @@ Journalanforderungen und deren Status stehen in
   Tokens, Tests und Affinity-Vorlagen dagegen schon.
 - Vor einer Einreichung müssen die aktuellen Hinweise des konkreten Journals
   erneut geprüft werden.
+
+## Fonts and typesetting
+
+tcfig bundles Liberation Sans (SIL OFL, Arial-metric) and registers it with Matplotlib, so
+figures look the same on every machine. PDF/PS embed TrueType text and SVG keeps text;
+install the files from `tcfig.font_files()` to edit exported text in, e.g., Affinity.
+For LaTeX-quality math, pass `typesetting="latex-sans"`, `"latex-serif"` or
+`"latex-modern"` to `canvas()`; `export()` then typesets with LuaLaTeX (PDF/PNG only).
+See `python examples/font_specimen.py` for a side-by-side specimen.

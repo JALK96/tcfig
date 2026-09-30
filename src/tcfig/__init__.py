@@ -17,7 +17,7 @@ from .layouts import (
     get_assembly,
     resolve_track_ratios,
 )
-from .styles import panel_label_size, rc_params, style_context
+from .styles import panel_label_size, rc_params, style_context, typesetting_options
 from .validate import ValidationIssue, ValidationReport, validate_figure
 
 __all__ = [
@@ -50,5 +50,6 @@ __all__ = [
     "resolve_track_ratios",
     "semantic_color",
     "style_context",
+    "typesetting_options",
     "validate_figure",
 ]

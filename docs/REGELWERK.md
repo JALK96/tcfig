@@ -69,6 +69,12 @@ Symbole, die dort fehlen, in STIX Sans. PDF/PS betten Schriften als TrueType ein
 SVG behält Text als Text; zum Nachbearbeiten (z. B. in Affinity) die mit
 `tcfig.font_files()` aufgelisteten Schriften lokal installieren. Formeln bleiben dabei
 einzelne Textstücke; ihren Aufbau im Code ändern.
+
+Alternativ setzt `typesetting="latex-sans"` (Fira Sans/Fira Math), `"latex-serif"`
+(STIX Two Text/Math) oder `"latex-modern"` (Latin Modern) alle Texte und Formeln mit
+LuaLaTeX beim Export (PDF/PNG, kein SVG). Text- und Mathe-Schrift stammen dann aus
+einem gemeinsam gestalteten Satz; die Schriften kommen aus der TeX-Installation.
+Ein Muster aller Varianten erzeugt `examples/font_specimen.py`.
 Die Basisschrift hängt vom Profil ab. Innerhalb eines Profils verwenden Achsen, Ticks,
 Legenden und Annotationen dieselbe Basisschrift. Hierarchie entsteht primär durch Gewicht,
 Position und Abstand.

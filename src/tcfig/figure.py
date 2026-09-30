@@ -61,6 +61,7 @@ def figure(
     sharex: bool | str = False,
     sharey: bool | str = False,
     layout: str | None = "constrained",
+    typesetting: str = "mathtext",
     **kwargs: Any,
 ):
     """Create a styled Matplotlib figure at exact final dimensions.
@@ -71,7 +72,7 @@ def figure(
 
     publication = get_profile(profile) if isinstance(profile, str) else profile
     width_mm, height_mm = resolve_size_mm(publication, width, height)
-    with style_context(publication):
+    with style_context(publication, typesetting):
         import matplotlib.pyplot as plt
 
         fig, axes = plt.subplots(
@@ -90,6 +91,7 @@ def figure(
         "height_mm": height_mm,
         "width_slot": width if isinstance(width, str) else "custom",
         "height_slot": height if isinstance(height, str) else "custom",
+        "typesetting": typesetting,
     }
     return fig, axes
 
@@ -106,12 +108,17 @@ def canvas(
     sharey: bool | str = False,
     layout: str | None = "constrained",
     close: bool = False,
+    typesetting: str = "mathtext",
     **kwargs: Any,
 ) -> Iterator[tuple[Any, Any]]:
-    """Recommended context API for constructing a complete figure."""
+    """Recommended context API for constructing a complete figure.
+
+    ``typesetting="latex-sans"`` (or another LaTeX set) typesets all text with
+    LuaLaTeX when the figure is exported; the default uses Matplotlib mathtext.
+    """
 
     publication = get_profile(profile) if isinstance(profile, str) else profile
-    with style_context(publication):
+    with style_context(publication, typesetting):
         fig, axes = figure(
             profile=publication,
             width=width,
@@ -121,6 +128,7 @@ def canvas(
             sharex=sharex,
             sharey=sharey,
             layout=layout,
+            typesetting=typesetting,
             **kwargs,
         )
         try:

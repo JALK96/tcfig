@@ -10,9 +10,12 @@ from .config import JournalProfile, get_profile, get_tokens
 from .fonts import register_fonts
 
 
-def rc_params(profile: str | JournalProfile = "house") -> dict[str, Any]:
+def rc_params(profile: str | JournalProfile = "house", typesetting: str = "mathtext") -> dict[str, Any]:
     """Build rcParams without modifying global rcParams.
 
+    ``typesetting`` is "mathtext" (Matplotlib text/math with bundled Liberation
+    Sans) or "latex-<set>" for a LaTeX font set from the design tokens; LaTeX
+    typesetting applies when a figure is saved through the pgf backend (export()).
     Bundled fonts are registered with Matplotlib's font manager (idempotent).
     """
 
@@ -79,6 +82,7 @@ def rc_params(profile: str | JournalProfile = "house") -> dict[str, Any]:
         "pdf.fonttype": 42,
         "ps.fonttype": 42,
         "svg.fonttype": "none",
+        **_latex_params(typography, typesetting),
     }
 
 
@@ -95,6 +99,37 @@ def _math_letters(typography: dict[str, Any]) -> dict[str, str]:
         "mathtext.bf": f"{family}:bold",
         "mathtext.cal": f"{family}:italic",  # no calligraphic face; avoids a missing-font fallback
         "mathtext.fallback": typography["math_fallback"],
+    }
+
+
+def typesetting_options() -> tuple[str, ...]:
+    """Available values for the ``typesetting`` argument."""
+
+    return ("mathtext", *(f"latex-{name}" for name, value in
+                          get_tokens()["typography"]["latex"].items() if isinstance(value, dict)))
+
+
+def _latex_params(typography: dict[str, Any], typesetting: str) -> dict[str, Any]:
+    """pgf/LuaLaTeX settings: text and math fonts from one designed font set."""
+
+    if typesetting == "mathtext":
+        return {}
+    latex = typography["latex"]
+    name = typesetting.removeprefix("latex-")
+    if not typesetting.startswith("latex-") or not isinstance(latex.get(name), dict):
+        raise ValueError(f"Unknown typesetting {typesetting!r}; choose from {typesetting_options()}.")
+    fonts = latex[name]
+    preamble = "\n".join([
+        r"\usepackage{fontspec}",
+        r"\usepackage{unicode-math}",
+        rf"\setmainfont{{{fonts['text']}}}",
+        rf"\setsansfont{{{fonts['text']}}}",
+        rf"\setmathfont{{{fonts['math']}}}",
+    ])
+    return {
+        "pgf.texsystem": latex["texsystem"],
+        "pgf.rcfonts": False,
+        "pgf.preamble": preamble,
     }
 
 
@@ -123,7 +158,9 @@ def _cycler(colors: list[str]):
 
 
 @contextmanager
-def style_context(profile: str | JournalProfile = "house") -> Iterator[JournalProfile]:
+def style_context(
+    profile: str | JournalProfile = "house", typesetting: str = "mathtext"
+) -> Iterator[JournalProfile]:
     """Temporarily activate the profile while a plot is constructed."""
 
     try:
@@ -132,5 +169,5 @@ def style_context(profile: str | JournalProfile = "house") -> Iterator[JournalPr
         raise RuntimeError("tcfig plotting requires Matplotlib. Install the project first.") from exc
 
     publication = get_profile(profile) if isinstance(profile, str) else profile
-    with mpl.rc_context(rc=rc_params(publication)):
+    with mpl.rc_context(rc=rc_params(publication, typesetting)):
         yield publication
