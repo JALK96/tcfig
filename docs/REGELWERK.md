@@ -75,6 +75,18 @@ Alternativ setzt `typesetting="latex-sans"` (Fira Sans/Fira Math), `"latex-serif
 LuaLaTeX beim Export (PDF/PNG, kein SVG). Text- und Mathe-Schrift stammen dann aus
 einem gemeinsam gestalteten Satz; die Schriften kommen aus der TeX-Installation.
 Ein Muster aller Varianten erzeugt `examples/font_specimen.py`.
+
+Wahl des Satzes:
+
+| Zweck | `typesetting` | Begründung |
+|---|---|---|
+| Abbildungen für Publikationen | `latex-sans` | Text- und Mathe-Schrift aus einem Satz (Fira); serifenlos passt neben jede Fließtextschrift und bleibt bei 8 pt gut lesbar |
+| Dokumente in Latin Modern/Computer Modern (z. B. Dissertation) | `latex-modern` | gleicher Stil wie Fließtext und Formeln des Dokuments |
+| Arbeitsabbildungen, Qualifikation, SVG, schnelle Iteration | `mathtext` | Standard; ohne TeX, schnell, SVG möglich |
+| Journal verlangt Serifenschrift passend zu Times | `latex-serif` | STIX Two entspricht einem Times-Fließtext |
+
+Innerhalb eines Dokuments wird ein Satz einheitlich verwendet. Der gewählte Satz steht
+in den Abbildungsmetadaten (`typesetting`).
 Die Basisschrift hängt vom Profil ab. Innerhalb eines Profils verwenden Achsen, Ticks,
 Legenden und Annotationen dieselbe Basisschrift. Hierarchie entsteht primär durch Gewicht,
 Position und Abstand.

@@ -88,3 +88,5 @@ install the files from `tcfig.font_files()` to edit exported text in, e.g., Affi
 For LaTeX-quality math, pass `typesetting="latex-sans"`, `"latex-serif"` or
 `"latex-modern"` to `canvas()`; `export()` then typesets with LuaLaTeX (PDF/PNG only).
 See `python examples/font_specimen.py` for a side-by-side specimen.
+Recommended: `latex-sans` for publication figures, `latex-modern` for documents set in Latin
+Modern, `mathtext` for working figures and SVG (see `docs/REGELWERK.md`, section 3).
