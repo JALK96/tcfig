@@ -7,11 +7,16 @@ from contextlib import contextmanager
 from typing import Any
 
 from .config import JournalProfile, get_profile, get_tokens
+from .fonts import register_fonts
 
 
 def rc_params(profile: str | JournalProfile = "house") -> dict[str, Any]:
-    """Build rcParams without modifying global Matplotlib state."""
+    """Build rcParams without modifying global rcParams.
 
+    Bundled fonts are registered with Matplotlib's font manager (idempotent).
+    """
+
+    register_fonts()
     publication = get_profile(profile) if isinstance(profile, str) else profile
     tokens = get_tokens()
     typography = tokens["typography"]
@@ -27,6 +32,7 @@ def rc_params(profile: str | JournalProfile = "house") -> dict[str, Any]:
         "font.sans-serif": list(typography["families"]),
         "font.size": publication.base_font_pt,
         "mathtext.fontset": typography["math_family"],
+        **_math_letters(typography),
         "axes.labelsize": publication.base_font_pt,
         "axes.titlesize": publication.base_font_pt,
         "axes.titlecolor": group_label,
@@ -73,6 +79,22 @@ def rc_params(profile: str | JournalProfile = "house") -> dict[str, Any]:
         "pdf.fonttype": 42,
         "ps.fonttype": 42,
         "svg.fonttype": "none",
+    }
+
+
+def _math_letters(typography: dict[str, Any]) -> dict[str, str]:
+    """Custom math fonts: letters from the text family, symbols from the fallback set."""
+
+    if typography["math_family"] != "custom":
+        return {}
+    family = typography["families"][0]
+    return {
+        "mathtext.rm": family,
+        "mathtext.sf": family,
+        "mathtext.it": f"{family}:italic",
+        "mathtext.bf": f"{family}:bold",
+        "mathtext.cal": f"{family}:italic",  # no calligraphic face; avoids a missing-font fallback
+        "mathtext.fallback": typography["math_fallback"],
     }
 
 

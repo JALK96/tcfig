@@ -1,8 +1,12 @@
 version = "0.3.0"
 
 [typography]
-families = ["Arial", "Helvetica", "Liberation Sans", "DejaVu Sans"]
-math_family = "stixsans"
+# Liberation Sans is bundled (SIL OFL) and metric-compatible with Arial; DejaVu Sans
+# only supplies glyphs Liberation Sans lacks.
+families = ["Liberation Sans", "DejaVu Sans"]
+# Math letters use the first text family; symbols fall back to STIX Sans.
+math_family = "custom"
+math_fallback = "stixsans"
 weight_regular = "normal"
 weight_emphasis = "bold"
 panel_label_delta_pt = 2.0

@@ -15,6 +15,7 @@ import numpy as np
 
 from . import __version__
 from .config import JournalProfile, get_profile, get_tokens
+from .styles import style_context
 from .validate import ValidationReport, validate_figure
 
 
@@ -63,16 +64,19 @@ def export(
     )
 
     files: list[Path] = []
-    for format_name in chosen_formats:
-        path = base.with_suffix(f".{format_name}")
-        save_kwargs: dict[str, Any] = {
-            "format": format_name,
-            "transparent": chosen_transparency,
-        }
-        if format_name == "png":
-            save_kwargs["dpi"] = chosen_dpi
-        fig.savefig(path, **save_kwargs)
-        files.append(path)
+    # Save inside the profile style: font embedding (TrueType in PDF/PS, text in
+    # SVG) and math fonts are read at save time, not when the figure was built.
+    with style_context(publication):
+        for format_name in chosen_formats:
+            path = base.with_suffix(f".{format_name}")
+            save_kwargs: dict[str, Any] = {
+                "format": format_name,
+                "transparent": chosen_transparency,
+            }
+            if format_name == "png":
+                save_kwargs["dpi"] = chosen_dpi
+            fig.savefig(path, **save_kwargs)
+            files.append(path)
 
     data_files = _write_data(base, data) if data else ()
     audit = {

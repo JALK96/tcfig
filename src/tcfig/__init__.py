@@ -6,6 +6,7 @@ from .colors import condition_styles, get_cmap, palette, semantic_color
 from .config import JournalProfile, available_profiles, get_profile, get_tokens
 from .export import ExportResult, export
 from .figure import canvas, figure, label_panels, resolve_size_mm
+from .fonts import font_files, register_fonts
 from .labels import quantity_label
 from .layouts import (
     AssemblySpec,
@@ -33,11 +34,13 @@ __all__ = [
     "condition_styles",
     "export",
     "figure",
+    "font_files",
     "fixed_mm",
     "get_assembly",
     "get_cmap",
     "get_profile",
     "get_tokens",
+    "register_fonts",
     "label_panels",
     "palette",
     "panel_label_size",

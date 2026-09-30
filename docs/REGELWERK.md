@@ -61,7 +61,14 @@ gesamte Figure laufen.
 
 ## 3. Typografie
 
-Die Schriftfamilie ist Arial mit Helvetica, Liberation Sans und DejaVu Sans als Fallback.
+Die Schriftfamilie ist Liberation Sans (SIL Open Font License, metrisch identisch mit
+Arial). tcfig liefert die Schriftdateien mit und registriert sie beim Import, damit
+Abbildungen unabhängig von System und Matplotlib-Cache gleich aussehen; DejaVu Sans
+ergänzt nur fehlende Zeichen. Formeln setzen Buchstaben in Liberation Sans und
+Symbole, die dort fehlen, in STIX Sans. PDF/PS betten Schriften als TrueType ein und
+SVG behält Text als Text; zum Nachbearbeiten (z. B. in Affinity) die mit
+`tcfig.font_files()` aufgelisteten Schriften lokal installieren. Formeln bleiben dabei
+einzelne Textstücke; ihren Aufbau im Code ändern.
 Die Basisschrift hängt vom Profil ab. Innerhalb eines Profils verwenden Achsen, Ticks,
 Legenden und Annotationen dieselbe Basisschrift. Hierarchie entsteht primär durch Gewicht,
 Position und Abstand.
